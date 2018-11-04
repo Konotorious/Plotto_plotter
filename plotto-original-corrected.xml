@@ -110,8 +110,7 @@
     </predicate>
     <predicate number="2">
       <description>Falling in love at a time when certain obligations forbid love</description>
-      <conflict-link ref="16a" category="Love and Courtship" subcategory="Love’s Beginning"/>
-      <conflict-link ref="16b" category="Love and Courtship" subcategory="Love’s Beginning"/>
+      <conflict-link ref="16" category="Love and Courtship" subcategory="Love’s Beginning"/>
       <conflict-link ref="119" category="Love and Courtship" subcategory="Love’s Misadventures"/>
       <conflict-link ref="271" category="Love and Courtship" subcategory="Love’s Rejection"/>
     </predicate>
@@ -155,16 +154,13 @@
     </predicate>
     <predicate number="11">
       <description>Confronting a situation in which courage and devotion alone can save the fortunes of one beloved</description>
-      <conflict-link ref="179a" category="Love and Courtship" subcategory="Love’s Misadventures"/>
-      <conflict-link ref="179b" category="Love and Courtship" subcategory="Love’s Misadventures"/>
-      <conflict-link ref="179c" category="Love and Courtship" subcategory="Love’s Misadventures"/>
+      <conflict-link ref="179" category="Love and Courtship" subcategory="Love’s Misadventures"/>
       <conflict-link ref="545" category="Married Life" subcategory="Marriage"/>
       <conflict-link ref="1462" category="Enterprise" subcategory="Revelation"/>
     </predicate>
     <predicate number="12">
       <description>Falling into misfortune through disloyalty in love</description>
-      <conflict-link ref="337a" category="Love and Courtship" subcategory="Love’s Rejection"/>
-      <conflict-link ref="337b" category="Love and Courtship" subcategory="Love’s Rejection"/>
+      <conflict-link ref="337" category="Love and Courtship" subcategory="Love’s Rejection"/>
       <conflict-link ref="547" category="Married Life" subcategory="Marriage"/>
     </predicate>
     <predicate number="13">
@@ -179,25 +175,17 @@
     <predicate number="14">
       <description>Falling into misfortune through the wiles of a crafty schemer</description>
       <conflict-link ref="471" category="Married Life" subcategory="Marriage"/>
-      <conflict-link ref="1260a" category="Enterprise" subcategory="Craftiness"/>
-      <conflict-link ref="1260b" category="Enterprise" subcategory="Craftiness"/>
-      <conflict-link ref="660a" category="Enterprise" subcategory="Misfortune"/>
-      <conflict-link ref="660b" category="Enterprise" subcategory="Misfortune"/>
+      <conflict-link ref="1260" category="Enterprise" subcategory="Craftiness"/>
+      <conflict-link ref="660" category="Enterprise" subcategory="Misfortune"/>
     </predicate>
     <predicate number="15">
       <description>Finding a sustaining power in misfortune</description>
-      <conflict-link ref="12a" category="Love and Courtship" subcategory="Love’s Beginning"/>
-      <conflict-link ref="12b" category="Love and Courtship" subcategory="Love’s Beginning"/>
+      <conflict-link ref="12" category="Love and Courtship" subcategory="Love’s Beginning"/>
       <conflict-link ref="106" category="Love and Courtship" subcategory="Love’s Misadventures"/>
-      <conflict-link ref="265a" category="Love and Courtship" subcategory="Love’s Rejection"/>
-      <conflict-link ref="265b" category="Love and Courtship" subcategory="Love’s Rejection"/>
-      <conflict-link ref="360a" category="Love and Courtship" subcategory="Marriage"/>
-      <conflict-link ref="360b" category="Love and Courtship" subcategory="Marriage"/>
-      <conflict-link ref="496a" category="Married Life" subcategory="Marriage"/>
-      <conflict-link ref="496b" category="Married Life" subcategory="Marriage"/>
-      <conflict-link ref="496c" category="Married Life" subcategory="Marriage"/>
-      <conflict-link ref="815a" category="Enterprise" subcategory="Helpfulness"/>
-      <conflict-link ref="815b" category="Enterprise" subcategory="Helpfulness"/>
+      <conflict-link ref="265" category="Love and Courtship" subcategory="Love’s Rejection"/>
+      <conflict-link ref="360" category="Love and Courtship" subcategory="Marriage"/>
+      <conflict-link ref="496" category="Married Life" subcategory="Marriage"/>
+      <conflict-link ref="815" category="Enterprise" subcategory="Helpfulness"/>
       <conflict-link ref="874" category="Enterprise" subcategory="Deliverance"/>
       <conflict-link ref="1051" category="Enterprise" subcategory="Chance"/>
     </predicate>
@@ -219,47 +207,29 @@
     </predicate>
     <predicate number="20">
       <description>Becoming involved with conditions in which misfortune is indicated</description>
-      <conflict-link ref="24a" category="Love and Courtship" subcategory="Love’s Beginning"/>
-      <conflict-link ref="24b" category="Love and Courtship" subcategory="Love’s Beginning"/>
-      <conflict-link ref="24c" category="Love and Courtship" subcategory="Love’s Beginning"/>
-      <conflict-link ref="24d" category="Love and Courtship" subcategory="Love’s Beginning"/>
-      <conflict-link ref="24e" category="Love and Courtship" subcategory="Love’s Beginning"/>
+      <conflict-link ref="24" category="Love and Courtship" subcategory="Love’s Beginning"/>
       <conflict-link ref="153" category="Love and Courtship" subcategory="Love’s Misadventures"/>
       <conflict-link ref="196" category="Love and Courtship" subcategory="Marriage Proposal"/>
-      <conflict-link ref="280a" category="Love and Courtship" subcategory="Love’s Rejection"/>
-      <conflict-link ref="280b" category="Love and Courtship" subcategory="Love’s Rejection"/>
-      <conflict-link ref="365a" category="Love and Courtship" subcategory="Marriage"/>
-      <conflict-link ref="365b" category="Love and Courtship" subcategory="Marriage"/>
-      <conflict-link ref="365c" category="Love and Courtship" subcategory="Marriage"/>
-      <conflict-link ref="365d" category="Love and Courtship" subcategory="Marriage"/>
+      <conflict-link ref="280" category="Love and Courtship" subcategory="Love’s Rejection"/>
+      <conflict-link ref="365" category="Love and Courtship" subcategory="Marriage"/>
       <conflict-link ref="571" category="Married Life" subcategory="Marriage"/>
       <conflict-link ref="956" category="Enterprise" subcategory="Idealism"/>
       <conflict-link ref="1026" category="Enterprise" subcategory="Necessity"/>
       <conflict-link ref="1036" category="Enterprise" subcategory="Chance"/>
       <conflict-link ref="1122" category="Enterprise" subcategory="Personal Limitations"/>
       <conflict-link ref="1295" category="Enterprise" subcategory="Transgression"/>
-      <conflict-link ref="695a" category="Enterprise" subcategory="Misfortune"/>
-      <conflict-link ref="695b" category="Enterprise" subcategory="Misfortune"/>
-      <conflict-link ref="793a" category="Enterprise" subcategory="Mistaken Judgment"/>
-      <conflict-link ref="793b" category="Enterprise" subcategory="Mistaken Judgment"/>
-      <conflict-link ref="887a" category="Enterprise" subcategory="Deliverance"/>
-      <conflict-link ref="887b" category="Enterprise" subcategory="Deliverance"/>
-      <conflict-link ref="997a" category="Enterprise" subcategory="Obligation"/>
-      <conflict-link ref="997b" category="Enterprise" subcategory="Obligation"/>
-      <conflict-link ref="1285a" category="Enterprise" subcategory="Craftiness"/>
-      <conflict-link ref="1285b" category="Enterprise" subcategory="Craftiness"/>
-      <conflict-link ref="1285c" category="Enterprise" subcategory="Craftiness"/>
-      <conflict-link ref="1438a" category="Enterprise" subcategory="Mystery"/>
-      <conflict-link ref="1438b" category="Enterprise" subcategory="Mystery"/>
-      <conflict-link ref="1438c" category="Enterprise" subcategory="Mystery"/>
+      <conflict-link ref="695" category="Enterprise" subcategory="Misfortune"/>
+      <conflict-link ref="793" category="Enterprise" subcategory="Mistaken Judgment"/>
+      <conflict-link ref="887" category="Enterprise" subcategory="Deliverance"/>
+      <conflict-link ref="997" category="Enterprise" subcategory="Obligation"/>
+      <conflict-link ref="1285" category="Enterprise" subcategory="Craftiness"/>
+      <conflict-link ref="1438" category="Enterprise" subcategory="Mystery"/>
       <conflict-link ref="1460" category="Enterprise" subcategory="Revelation"/>
     </predicate>
     <predicate number="21">
       <description>Falling into misfortune through mistaken judgment</description>
-      <conflict-link ref="40a" category="Love and Courtship" subcategory="Love’s Misadventures"/>
-      <conflict-link ref="40b" category="Love and Courtship" subcategory="Love’s Misadventures"/>
-      <conflict-link ref="182a" category="Love and Courtship" subcategory="Marriage Proposal"/>
-      <conflict-link ref="182b" category="Love and Courtship" subcategory="Marriage Proposal"/>
+      <conflict-link ref="40" category="Love and Courtship" subcategory="Love’s Misadventures"/>
+      <conflict-link ref="182" category="Love and Courtship" subcategory="Marriage Proposal"/>
       <conflict-link ref="205" category="Love and Courtship" subcategory="Love’s Rejection"/>
       <conflict-link ref="342" category="Love and Courtship" subcategory="Marriage"/>
       <conflict-link ref="369" category="Married Life" subcategory="Marriage"/>
@@ -271,18 +241,15 @@
       <conflict-link ref="979" category="Enterprise" subcategory="Obligation"/>
       <conflict-link ref="1023" category="Enterprise" subcategory="Necessity"/>
       <conflict-link ref="1034" category="Enterprise" subcategory="Chance"/>
-      <conflict-link ref="1057a" category="Enterprise" subcategory="Personal Limitations"/>
-      <conflict-link ref="1057b" category="Enterprise" subcategory="Personal Limitations"/>
-      <conflict-link ref="1290a" category="Enterprise" subcategory="Transgression"/>
-      <conflict-link ref="1290b" category="Enterprise" subcategory="Transgression"/>
+      <conflict-link ref="1057" category="Enterprise" subcategory="Personal Limitations"/>
+      <conflict-link ref="1290" category="Enterprise" subcategory="Transgression"/>
       <conflict-link ref="1310" category="Enterprise" subcategory="Revenge"/>
       <conflict-link ref="1330" category="Enterprise" subcategory="Mystery"/>
     </predicate>
     <predicate number="22">
       <description>Following a wrong course through mistaken judgment</description>
       <conflict-link ref="255" category="Love and Courtship" subcategory="Love’s Rejection"/>
-      <conflict-link ref="484a" category="Married Life" subcategory="Marriage"/>
-      <conflict-link ref="484b" category="Married Life" subcategory="Marriage"/>
+      <conflict-link ref="484" category="Married Life" subcategory="Marriage"/>
       <conflict-link ref="768" category="Enterprise" subcategory="Mistaken Judgment"/>
     </predicate>
     <predicate number="23">
@@ -290,10 +257,7 @@
       <conflict-link ref="21" category="Love and Courtship" subcategory="Love’s Beginning"/>
       <conflict-link ref="177" category="Love and Courtship" subcategory="Love’s Misadventures"/>
       <conflict-link ref="328" category="Love and Courtship" subcategory="Love’s Rejection"/>
-      <conflict-link ref="365a" category="Love and Courtship" subcategory="Marriage"/>
-      <conflict-link ref="365b" category="Love and Courtship" subcategory="Marriage"/>
-      <conflict-link ref="365c" category="Love and Courtship" subcategory="Marriage"/>
-      <conflict-link ref="365d" category="Love and Courtship" subcategory="Marriage"/>
+      <conflict-link ref="365" category="Love and Courtship" subcategory="Marriage"/>
       <conflict-link ref="538" category="Married Life" subcategory="Marriage"/>
       <conflict-link ref="786" category="Enterprise" subcategory="Mistaken Judgment"/>
     </predicate>
@@ -319,9 +283,7 @@
     </predicate>
     <predicate number="28">
       <description>Facing a situation in which the misfortunes of one greatly esteemed call for courage and sagacious enterprise</description>
-      <conflict-link ref="125a" category="Love and Courtship" subcategory="Love’s Misadventures"/>
-      <conflict-link ref="125b" category="Love and Courtship" subcategory="Love’s Misadventures"/>
-      <conflict-link ref="125c" category="Love and Courtship" subcategory="Love’s Misadventures"/>
+      <conflict-link ref="125" category="Love and Courtship" subcategory="Love’s Misadventures"/>
       <conflict-link ref="836" category="Enterprise" subcategory="Helpfulness"/>
     </predicate>
     <predicate number="29">
@@ -350,31 +312,24 @@
     </predicate>
     <predicate number="34">
       <description>Embarking upon an enterprise of insurrection in the hope of ameliorating certain evil conditions</description>
-      <conflict-link ref="949a" category="Enterprise" subcategory="Idealism"/>
-      <conflict-link ref="949b" category="Enterprise" subcategory="Idealism"/>
+      <conflict-link ref="949" category="Enterprise" subcategory="Idealism"/>
     </predicate>
     <predicate number="35">
       <description>Becoming involved in a complication that challenges the value of cherished ideals</description>
       <conflict-link ref="292" category="Love and Courtship" subcategory="Love’s Rejection"/>
-      <conflict-link ref="922a" category="Enterprise" subcategory="Idealism"/>
-      <conflict-link ref="922b" category="Enterprise" subcategory="Idealism"/>
+      <conflict-link ref="922" category="Enterprise" subcategory="Idealism"/>
     </predicate>
     <predicate number="36">
       <description>Undergoing an experience that results in a remarkable character change</description>
-      <conflict-link ref="152a" category="Love and Courtship" subcategory="Love’s Misadventures"/>
-      <conflict-link ref="152b" category="Love and Courtship" subcategory="Love’s Misadventures"/>
-      <conflict-link ref="680a" category="Enterprise" subcategory="Misfortune"/>
-      <conflict-link ref="680b" category="Enterprise" subcategory="Misfortune"/>
+      <conflict-link ref="152" category="Love and Courtship" subcategory="Love’s Misadventures"/>
+      <conflict-link ref="680" category="Enterprise" subcategory="Misfortune"/>
       <conflict-link ref="963" category="Enterprise" subcategory="Idealism"/>
     </predicate>
     <predicate number="37">
       <description>Seeking against difficulties to realize a cherished ideal</description>
-      <conflict-link ref="563a" category="Married Life" subcategory="Marriage"/>
-      <conflict-link ref="563b" category="Married Life" subcategory="Marriage"/>
-      <conflict-link ref="563c" category="Married Life" subcategory="Marriage"/>
+      <conflict-link ref="563" category="Married Life" subcategory="Marriage"/>
       <conflict-link ref="965" category="Enterprise" subcategory="Idealism"/>
-      <conflict-link ref="1107a" category="Enterprise" subcategory="Personal Limitations"/>
-      <conflict-link ref="1107b" category="Enterprise" subcategory="Personal Limitations"/>
+      <conflict-link ref="1107" category="Enterprise" subcategory="Personal Limitations"/>
     </predicate>
     <predicate number="38">
       <description>Committing a grievous mistake and seeking in secret to live down its evil results</description>
@@ -383,8 +338,7 @@
     <predicate number="39">
       <description>Forsaking cherished ambitions to carry out an obligation</description>
       <conflict-link ref="123" category="Love and Courtship" subcategory="Love’s Misadventures"/>
-      <conflict-link ref="282a" category="Love and Courtship" subcategory="Love’s Rejection"/>
-      <conflict-link ref="282b" category="Love and Courtship" subcategory="Love’s Rejection"/>
+      <conflict-link ref="282" category="Love and Courtship" subcategory="Love’s Rejection"/>
       <conflict-link ref="508" category="Married Life" subcategory="Marriage"/>
       <conflict-link ref="989" category="Enterprise" subcategory="Obligation"/>
     </predicate>
@@ -396,12 +350,9 @@
     </predicate>
     <predicate number="41">
       <description>Finding an obligation at variance with ambition, inclination or necessity</description>
-      <conflict-link ref="19a" category="Love and Courtship" subcategory="Love’s Beginning"/>
-      <conflict-link ref="19b" category="Love and Courtship" subcategory="Love’s Beginning"/>
-      <conflict-link ref="127a" category="Love and Courtship" subcategory="Love’s Misadventures"/>
-      <conflict-link ref="127b" category="Love and Courtship" subcategory="Love’s Misadventures"/>
-      <conflict-link ref="294a" category="Love and Courtship" subcategory="Love’s Rejection"/>
-      <conflict-link ref="294b" category="Love and Courtship" subcategory="Love’s Rejection"/>
+      <conflict-link ref="19" category="Love and Courtship" subcategory="Love’s Beginning"/>
+      <conflict-link ref="127" category="Love and Courtship" subcategory="Love’s Misadventures"/>
+      <conflict-link ref="294" category="Love and Courtship" subcategory="Love’s Rejection"/>
       <conflict-link ref="521" category="Married Life" subcategory="Marriage"/>
       <conflict-link ref="1000" category="Enterprise" subcategory="Obligation"/>
     </predicate>
@@ -442,37 +393,22 @@
     </predicate>
     <predicate number="50">
       <description>Being impelled by an unusual motive to engage in crafty enterprise</description>
-      <conflict-link ref="1a" category="Love and Courtship" subcategory="Love’s Beginning"/>
-      <conflict-link ref="1b" category="Love and Courtship" subcategory="Love’s Beginning"/>
-      <conflict-link ref="1c" category="Love and Courtship" subcategory="Love’s Beginning"/>
-      <conflict-link ref="1d" category="Love and Courtship" subcategory="Love’s Beginning"/>
-      <conflict-link ref="1e" category="Love and Courtship" subcategory="Love’s Beginning"/>
-      <conflict-link ref="1f" category="Love and Courtship" subcategory="Love’s Beginning"/>
-      <conflict-link ref="1g" category="Love and Courtship" subcategory="Love’s Beginning"/>
-      <conflict-link ref="1h" category="Love and Courtship" subcategory="Love’s Beginning"/>
-      <conflict-link ref="66a" category="Love and Courtship" subcategory="Love’s Misadventures"/>
-      <conflict-link ref="66b" category="Love and Courtship" subcategory="Love’s Misadventures"/>
-      <conflict-link ref="66c" category="Love and Courtship" subcategory="Love’s Misadventures"/>
+      <conflict-link ref="1" category="Love and Courtship" subcategory="Love’s Beginning"/>
+      <conflict-link ref="66" category="Love and Courtship" subcategory="Love’s Misadventures"/>
       <conflict-link ref="185" category="Love and Courtship" subcategory="Marriage Proposal"/>
       <conflict-link ref="230" category="Love and Courtship" subcategory="Love’s Rejection"/>
-      <conflict-link ref="347a" category="Love and Courtship" subcategory="Marriage"/>
-      <conflict-link ref="347b" category="Love and Courtship" subcategory="Marriage"/>
+      <conflict-link ref="347" category="Love and Courtship" subcategory="Marriage"/>
       <conflict-link ref="419" category="Married Life" subcategory="Marriage"/>
       <conflict-link ref="813" category="Enterprise" subcategory="Helpfulness"/>
-      <conflict-link ref="863a" category="Enterprise" subcategory="Deliverance"/>
-      <conflict-link ref="863b" category="Enterprise" subcategory="Deliverance"/>
-      <conflict-link ref="863c" category="Enterprise" subcategory="Deliverance"/>
+      <conflict-link ref="863" category="Enterprise" subcategory="Deliverance"/>
       <conflict-link ref="932" category="Enterprise" subcategory="Idealism"/>
       <conflict-link ref="1141" category="Enterprise" subcategory="Simulation"/>
-      <conflict-link ref="1209a" category="Enterprise" subcategory="Craftiness"/>
-      <conflict-link ref="1209b" category="Enterprise" subcategory="Craftiness"/>
-      <conflict-link ref="1209c" category="Enterprise" subcategory="Craftiness"/>
+      <conflict-link ref="1209" category="Enterprise" subcategory="Craftiness"/>
       <conflict-link ref="1365" category="Enterprise" subcategory="Mystery"/>
     </predicate>
     <predicate number="51">
       <description>Devising a clever and plausible delusion in order to forward certain ambitious plans</description>
-      <conflict-link ref="1277a" category="Enterprise" subcategory="Craftiness"/>
-      <conflict-link ref="1277b" category="Enterprise" subcategory="Craftiness"/>
+      <conflict-link ref="1277" category="Enterprise" subcategory="Craftiness"/>
     </predicate>
     <predicate number="52">
       <description>Encountering a would-be transgressor and seeking to prevent a transgression</description>
@@ -505,13 +441,11 @@
     </predicate>
     <predicate number="58">
       <description>Engaging in an enterprise and then mysteriously disappearing</description>
-      <conflict-link ref="1414a" category="Enterprise" subcategory="Mystery"/>
-      <conflict-link ref="1414b" category="Enterprise" subcategory="Mystery"/>
+      <conflict-link ref="1414" category="Enterprise" subcategory="Mystery"/>
     </predicate>
     <predicate number="59">
       <description>Engaging in an mysterious enterprise and becoming involved with the occult and the fantastic</description>
-      <conflict-link ref="1418a" category="Enterprise" subcategory="Mystery"/>
-      <conflict-link ref="1418b" category="Enterprise" subcategory="Mystery"/>
+      <conflict-link ref="1418" category="Enterprise" subcategory="Mystery"/>
     </predicate>
     <predicate number="60">
       <description>Becoming involved, through curiosity aroused by mystery, in a strange enterprise</description>
@@ -519,8 +453,7 @@
     </predicate>
     <predicate number="61">
       <description>Becoming aware of an important secret that calls for decisive action</description>
-      <conflict-link ref="802a" category="Enterprise" subcategory="Mistaken Judgment"/>
-      <conflict-link ref="802b" category="Enterprise" subcategory="Mistaken Judgment"/>
+      <conflict-link ref="802" category="Enterprise" subcategory="Mistaken Judgment"/>
       <conflict-link ref="1447" category="Enterprise" subcategory="Revelation"/>
     </predicate>
     <predicate number="62">
