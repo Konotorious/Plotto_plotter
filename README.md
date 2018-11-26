@@ -3,7 +3,7 @@
 
 [Plotto](https://garykac.github.io/plotto/plotto-mf.html) is a 1928 manual by William Wallace Cook meant to help fiction writers by providing them a way to easily construct plotlines which they can use to write short stories, novells or novels. 
 
-This here little program is meant to automate the process. Instead of franticly turning page (or scrolling around the HTML file) and copying segments, the program would randomly walk the thread provided by Plotto to generate a plotline --- including handling the chararcter symbol substitution --- which then can be manually modified. 
+This here little program is meant to automate the process. Instead of franticly turning page (or scrolling around the HTML file) and copying segments, the program would randomly walk the thread provided by Plotto to generate a plotline --- including handling the chararcter symbol substitution --- which then can be manually modified. The code is running over a modified version of [eykd's Plotto xml file](https://github.com/eykd/plottoxml).
 
 The script is still at an early stage of development with much still needed to be fixed and added –– in particular an easy UI -- but the basic functinality is there.
 
