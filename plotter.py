@@ -198,7 +198,7 @@ class Storyline:
     
     def move_segment(self, segment_idx, new_idx):
         if not segment_idx == new_idx:
-            segment = self.story(segment_idx)
+            segment = self.story[segment_idx]
             self.remove_segment(segment_idx)
             if segment_idx > new_idx:
                 self.story.insert(new_idx, segment)
