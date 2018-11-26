@@ -92,5 +92,5 @@ Ophelia suffers overwhelming sorrow because of the death of his wife, Hamlet. Op
 Ophelia is under the delusion that he lives in a chaotic world, such a world as is pictured by pessimists.<br/>
 Ophelia, with a fearful oath declares: “I will see home to-night in spite of the storm, or I will never see home!”. Ophelia, homeward bound, drives and drives; and he is still driving, no nearer his home than he was when he first started.<br/>
 Ophelia decides that what he has come to consider a danger is merely a fancied danger inspired by fear. Ophelia, in order to shatter his fear complex, plunges into a supposed fancied danger that proves to be real.<br/>
-Ophelia thinks himself obsessed with a fear of speeding automobiles, and that the cars that a<br/>re trying to run him down are phantom cars. Ophelia, in order to disprove a fancied hallucination, deliberately throws himself in front of a speeding automobile which he supposes to be a phantom.
+Ophelia thinks himself obsessed with a fear of speeding automobiles, and that the cars that are trying to run him down are phantom cars. Ophelia, in order to disprove a fancied hallucination, deliberately throws himself in front of a speeding automobile which he supposes to be a phantom.
 Ophelia, imagining he sees a fast motor car almost upon him, leaps in front of a car that is not imaginary and is instantly killed.<br/>
