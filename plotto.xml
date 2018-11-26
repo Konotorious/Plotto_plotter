@@ -16600,7 +16600,7 @@
         <permutation number="1"><description><character-link ref="A">A</character-link>, married to <character-link ref="B">B</character-link>, is haunted by memories of a former sweetheart, <character-link ref="B-3">B-3</character-link>.</description></permutation>
         <permutation number="2"><description>Because of his memories, <character-link ref="A">A</character-link>’s married happiness is not what it should be.</description></permutation>
         <permutation number="3">
-          <description><character-link ref="A">A</character-link> finds <character-link ref="B-3">B-3</character-link>, his love of other days, and discovers that her beauty and charm have faded <character-link ref="A">A</character-link> knows at once that his emancipation from the. evil influence of <character-link ref="B-3">B-3</character-link> is complete, and he returns to <character-link ref="B">B</character-link> a better and a wiser man.</description>
+          <description><character-link ref="A">A</character-link> finds <character-link ref="B-3">B-3</character-link>, his love of other days, and discovers that her beauty and charm have faded <character-link ref="A">A</character-link> knows at once that his emancipation from the evil influence of <character-link ref="B-3">B-3</character-link> is complete, and he returns to <character-link ref="B">B</character-link> a better and a wiser man.</description>
           <includes>
             <group mode="choose">
               <conflict-link ref="244" category="Love and Courtship" subcategory="Love’s Rejection">
@@ -30045,7 +30045,7 @@
     </conflict>
     <conflict id="751" category="Enterprise" subcategory="Mistaken Judgment">
       <permutations>
-        <permutation number="1"><description><character-link ref="A">A</character-link>, informed that he has only a few months to live, undertakes an unusual enterprise</description><option><character-link ref="A">A</character-link> seeks to spend all his money before he dies</option><option><character-link ref="A">A</character-link> hurls himself recklessly into perilous situations in the hope of losing his life.</option></permutation>
+        <permutation number="1"><description><character-link ref="A">A</character-link>, informed that he has only a few months to live, undertakes an unusual enterprise.</description><option><character-link ref="A">A</character-link> seeks to spend all his money before he dies</option><option><character-link ref="A">A</character-link> hurls himself recklessly into perilous situations in the hope of losing his life.</option></permutation>
         <permutation number="2"><description><character-link ref="A">A</character-link>, told that he has only a few months to live, discovers that the doctor was in error and that he still has a long life ahead of him.</description></permutation>
       </permutations>
       <lead-ups>
@@ -35080,7 +35080,7 @@
     </conflict>
     <conflict id="887a" category="Enterprise" subcategory="Deliverance">
       <permutations>
-        <permutation number="1"><description><character-link ref="A">A</character-link>, held on a murder charge, wins freedom by an unusual plea 9f his attorney, <character-link ref="A-7">A-7</character-link>.</description></permutation>
+        <permutation number="1"><description><character-link ref="A">A</character-link>, held on a murder charge, wins freedom by an unusual plea of his attorney, <character-link ref="A-7">A-7</character-link>.</description></permutation>
         <permutation number="2"><description><character-link ref="A">A</character-link>, held on a murder charge, is released from custody when his lawyer, <character-link ref="A-7">A-7</character-link>, proves that <character-link ref="A">A</character-link>, “drunk with sleep,” had believed his victim, <character-link ref="A-3">A-3</character-link>, was trying to kill him.</description></permutation>
       </permutations>
       <lead-ups>
@@ -39377,7 +39377,7 @@
     <conflict id="1013" category="Enterprise" subcategory="Obligation">
       <permutations>
         <permutation number="1"><description><character-link ref="A">A</character-link>, a fugitive in the desert, discovers that the officer who is pursuing him, <character-link ref="A-6">A-6</character-link>, is sunblind and dying from thirst.</description></permutation>
-        <permutation number="2"><description><character-link ref="A">A</character-link>, a fugitive from justice, will be arrested if he rescues <character-link ref="A-6">A-6</character-link>, the officer who is pursuing him. from misfortune; and if <character-link ref="A">A</character-link> abandons <character-link ref="A-6">A-6</character-link>, <character-link ref="A-6">A-6</character-link> will die.</description></permutation>
+        <permutation number="2"><description><character-link ref="A">A</character-link>, a fugitive from justice, will be arrested if he rescues <character-link ref="A-6">A-6</character-link>, the officer who is pursuing him, from misfortune; and if <character-link ref="A">A</character-link> abandons <character-link ref="A-6">A-6</character-link>, <character-link ref="A-6">A-6</character-link> will die.</description></permutation>
       </permutations>
       <lead-ups>
         <group mode="choose">
@@ -44533,7 +44533,7 @@
     </conflict>
     <conflict id="1166b" category="Enterprise" subcategory="Simulation">
       <permutations>
-        <permutation number="1"><description><character-link ref="A">A</character-link>, adroitly, secures an object greatly desired, X2. from <character-link ref="A-9">A-9</character-link>, who will not dispose of it.</description></permutation>
+        <permutation number="1"><description><character-link ref="A">A</character-link>, adroitly, secures an object greatly desired, X2, from <character-link ref="A-9">A-9</character-link>, who will not dispose of it.</description></permutation>
         <permutation number="2"><description><character-link ref="A">A</character-link>, making a replica, X1, of a valuable original, X2, secures X2 by leaving X1 in its place.</description></permutation>
       </permutations>
       <lead-ups>
@@ -46547,7 +46547,7 @@
     </conflict>
     <conflict id="1226" category="Enterprise" subcategory="Craftiness">
       <permutations>
-        <permutation number="1"><description><character-link ref="A">A</character-link> learns t hat he has been cast, by <character-link ref="A-5">A-5</character-link>, for the role of victim in a confidence game.</description></permutation>
+        <permutation number="1"><description><character-link ref="A">A</character-link> learns that he has been cast, by <character-link ref="A-5">A-5</character-link>, for the role of victim in a confidence game.</description></permutation>
         <permutation number="2"><description><character-link ref="A">A</character-link> simulates guilessness in an attempt to lure designing <character-link ref="A-5">A-5</character-link> to his own undoing.</description></permutation>
       </permutations>
       <lead-ups>
@@ -49946,7 +49946,7 @@
     <conflict id="1313a" category="Enterprise" subcategory="Revenge">
       <permutations>
         <permutation number="1"><description><character-link ref="A">A</character-link> seeks revenge upon his friend, <character-link ref="A-2">A-2</character-link>.</description></permutation>
-        <permutation number="2"><description><character-link ref="A">A</character-link> and his friend, <character-link ref="A-2">A-2</character-link>, are of high and honored station: and <character-link ref="A">A</character-link>, seeking revenge against <character-link ref="A-2">A-2</character-link>, must conceal his purpose and proceed by mdirection.</description></permutation>
+        <permutation number="2"><description><character-link ref="A">A</character-link> and his friend, <character-link ref="A-2">A-2</character-link>, are of high and honored station: and <character-link ref="A">A</character-link>, seeking revenge against <character-link ref="A-2">A-2</character-link>, must conceal his purpose and proceed by indirection.</description></permutation>
       </permutations>
       <lead-ups>
         <group mode="choose">
@@ -51029,29 +51029,6 @@
           <option><character-link ref="X">X</character-link> is a small image, a peculiar idol, that has such a strange fascination for <character-link ref="A">A</character-link> that he keeps it always before him on his writing desk; or</option>
           <option><character-link ref="X">X</character-link> is a mirror. <character-link ref="A">A</character-link> little cloud appears on the face of in old mirror, then disappears, leaving mysterious persons and scenes on the glass; or</option>
           <option><character-link ref="X">X</character-link> is a green stone, a beautiful piece of jade, on which are engraved characters signifying “Bakht,” Persian for “good luck”.</option>
-          <includes>
-            <group mode="choose">
-              <conflict-link ref="265a" category="Love and Courtship" subcategory="Love’s Rejection"/>
-            </group>
-            <group mode="choose">
-              <conflict-link ref="633" category="Enterprise" subcategory="Misfortune"/>
-            </group>
-            <group mode="choose">
-              <conflict-link ref="1358" category="Enterprise" subcategory="Mystery"/>
-            </group>
-            <group mode="choose">
-              <conflict-link ref="1361b" category="Enterprise" subcategory="Mystery"/>
-            </group>
-            <group mode="choose">
-              <conflict-link ref="1357" category="Enterprise" subcategory="Mystery" permutations="2"/>
-            </group>
-            <group mode="choose">
-              <conflict-link ref="1374" category="Enterprise" subcategory="Mystery" permutations="2"/>
-            </group>
-            <group mode="choose">
-              <conflict-link ref="1375" category="Enterprise" subcategory="Mystery"/>
-            </group>
-          </includes>
         </permutation>
       </permutations>
       <lead-ups>
@@ -51066,7 +51043,29 @@
           <conflict-link ref="1389b" category="Enterprise" subcategory="Mystery"/>
         </group>
       </lead-ups>
-      <carry-ons/>
+	  <carry-ons>
+		<group mode="choose">
+		  <conflict-link ref="265a" category="Love and Courtship" subcategory="Love’s Rejection"/>
+		</group>
+		<group mode="choose">
+		  <conflict-link ref="633" category="Enterprise" subcategory="Misfortune"/>
+		</group>
+		<group mode="choose">
+		  <conflict-link ref="1358" category="Enterprise" subcategory="Mystery"/>
+		</group>
+		<group mode="choose">
+		  <conflict-link ref="1361b" category="Enterprise" subcategory="Mystery"/>
+		</group>
+		<group mode="choose">
+		  <conflict-link ref="1357" category="Enterprise" subcategory="Mystery" permutations="2"/>
+		</group>
+		<group mode="choose">
+		  <conflict-link ref="1374" category="Enterprise" subcategory="Mystery" permutations="2"/>
+		</group>
+		<group mode="choose">
+		  <conflict-link ref="1375" category="Enterprise" subcategory="Mystery"/>
+		</group>
+	  </carry-ons>
     </conflict>
     <conflict id="1342b" category="Enterprise" subcategory="Mystery">
       <permutations>
@@ -51109,27 +51108,6 @@
           <option><character-link ref="X">X</character-link> is a Chinese coin; or</option>
           <option><character-link ref="X">X</character-link> is a dried “button” of the mescal plant. See</option>
           <option>1342.</option>
-          <includes>
-            <group mode="choose">
-              <conflict-link ref="595" category="Enterprise" subcategory="Misfortune"/>
-            </group>
-            <group mode="choose">
-              <conflict-link ref="596" category="Enterprise" subcategory="Misfortune"/>
-            </group>
-            <group mode="choose">
-              <conflict-link ref="597" category="Enterprise" subcategory="Misfortune"/>
-            </group>
-            <group mode="choose">
-              <conflict-link ref="1352" category="Enterprise" subcategory="Mystery"/>
-            </group>
-            <group mode="choose">
-              <conflict-link ref="1377b" category="Enterprise" subcategory="Mystery"/>
-            </group>
-            <group mode="choose">
-              <conflict-link ref="1382a" category="Enterprise" subcategory="Mystery" permutations="2"/>
-              <conflict-link ref="1382b" category="Enterprise" subcategory="Mystery" permutations="2"/>
-            </group>
-          </includes>
         </permutation>
       </permutations>
       <lead-ups>
@@ -51143,7 +51121,27 @@
           <conflict-link ref="1383" category="Enterprise" subcategory="Mystery"/>
         </group>
       </lead-ups>
-      <carry-ons/>
+	<carry-ons>
+		<group mode="choose">
+		  <conflict-link ref="595" category="Enterprise" subcategory="Misfortune"/>
+		</group>
+		<group mode="choose">
+		  <conflict-link ref="596" category="Enterprise" subcategory="Misfortune"/>
+		</group>
+		<group mode="choose">
+		  <conflict-link ref="597" category="Enterprise" subcategory="Misfortune"/>
+		</group>
+		<group mode="choose">
+		  <conflict-link ref="1352" category="Enterprise" subcategory="Mystery"/>
+		</group>
+		<group mode="choose">
+		  <conflict-link ref="1377b" category="Enterprise" subcategory="Mystery"/>
+		</group>
+		<group mode="choose">
+		  <conflict-link ref="1382a" category="Enterprise" subcategory="Mystery" permutations="2"/>
+		  <conflict-link ref="1382b" category="Enterprise" subcategory="Mystery" permutations="2"/>
+		</group>
+	  </carry-ons>
     </conflict>
     <conflict id="1344" category="Enterprise" subcategory="Mystery">
       <permutations>
@@ -53282,7 +53280,7 @@
     <conflict id="1404b" category="Enterprise" subcategory="Mystery">
       <permutations>
         <permutation number="1"><description><character-link ref="A">A</character-link> endeavors to find <character-link ref="A-4">A-4</character-link>, who has mysteriously disappeared.</description></permutation>
-        <permutation number="2"><description><character-link ref="A">A</character-link>’s only clue in his search for <character-link ref="A-4">A-4</character-link> is the picture of a beautiful woman, <character-link ref="X">X</character-link>, left at the place where <character-link ref="A">A</character-link> disappeared, and a legend connected with the picture.</description></permutation>
+        <permutation number="2"><description><character-link ref="A">A</character-link>’s only clue in his search for <character-link ref="A-4">A-4</character-link> is the picture of a beautiful woman, <character-link ref="X">X</character-link>, left at the place where <character-link ref="A-4">A-4</character-link> disappeared, and a legend connected with the picture.</description></permutation>
       </permutations>
       <lead-ups>
         <group mode="choose">
