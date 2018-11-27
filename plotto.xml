@@ -39746,7 +39746,6 @@
       <permutations>
         <permutation number="1"><description><character-link ref="A">A</character-link> is desperately in need of money.</description></permutation>
         <permutation number="2"><description><character-link ref="A">A</character-link>, desperately in need of money, undertakes a rash enterprise and becomes involved in an unpleasant complication.</description></permutation>
-        <permutation number="3"><description>(637;.</description></permutation>
       </permutations>
       <lead-ups>
         <group mode="choose">
@@ -39760,6 +39759,9 @@
         </group>
       </lead-ups>
       <carry-ons>
+        <group mode="choose">
+          <conflict-link ref="637" category="Enterprise" subcategory="Misfortune"/>
+        </group>
         <group mode="choose">
           <conflict-link ref="753" category="Enterprise" subcategory="Mistaken Judgment"/>
         </group>
