@@ -357,6 +357,7 @@ class Conflict:
         self.links_f = bs_conflict.find('carry-ons')
         self.links_f.link = []
         self.storyline = storyline
+        self.plain_text_editing = []
         
         # Getting the relevant permutations of the clause
         self.content = bs_conflict.permutations # the content of the conflict piece
@@ -398,8 +399,21 @@ class Conflict:
                     i.string.replace_with(self.characters[char_symbol])
 
         self.plain_text = " ".join([permuation.description.text for permuation in self.permutations])
+        self.reapply_plain_text_editing()
+        
+    def clear_plain_text_editing(self):
+        self.plain_text_editing = []
+        self._apply_character_maskings()
+        
+    def reapply_plain_text_editing(self):
+        for args in self.plain_text_editing:
+            self.edit_plain_text(*args)
      
-    def edit_plain_text(self, old_word, new_word):
+    def edit_plain_text(self, old_word, new_word, save_edit=True):
+        if save_edit:
+            # saves the execution of the function to rerun it
+            # automatically when the plain text is regenerated
+            self.plain_text_editing.append([old_word, new_word, False])
         if isinstance(old_word, str):
             manipulated_text = self.plain_text
             manipulated_text = manipulated_text.replace(old_word, new_word)
