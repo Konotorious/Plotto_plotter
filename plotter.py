@@ -312,11 +312,6 @@ class Storyline:
             
             self.story.append(Conflict(self.soup, Bconflictid,[],self.transpositions, self.characters, self))
         else:
-            #generate_next(self, direction ="+", choose= None)
-            
-            
-                
-            
             if steps == "+":
                 self.add_conflict_to_story()
                     
@@ -403,7 +398,23 @@ class Conflict:
                     i.string.replace_with(self.characters[char_symbol])
 
         self.plain_text = " ".join([permuation.description.text for permuation in self.permutations])
-      
+     
+    def edit_plain_text(self, old_word, new_word):
+        if isinstance(old_word, str):
+            manipulated_text = self.plain_text
+            manipulated_text = manipulated_text.replace(old_word, new_word)
+        elif isinstance(old_word, int):
+            manipulated_text_list = self.plain_text.split()
+            manipulated_text_list[old_word] = new_word
+            manipulated_text = ' '.join(manipulated_text_list)
+        else:
+            raise ValueError("'old_word' argument must be either a string or an integer")
+        self.plain_text = manipulated_text 
+    
+    def list_words_in_segment(self):
+        for idx, word in enumerate(self.plain_text.split()):
+            print("({}) ".format(idx), word)
+     
     def add_character(self, symbols, names):
         """Adds character masking to the story ("A -> Hamlet")"""
         if not isinstance(symbols, list):
