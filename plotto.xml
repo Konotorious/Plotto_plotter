@@ -9621,7 +9621,7 @@
     </conflict>
     <conflict id="211" category="Love and Courtship" subcategory="Love’s Rejection">
       <permutations>
-        <permutation number="1"><description><character-link ref="A">A</character-link>, who has long cherished <character-link ref="B">B</character-link> in his heart as the loveliest and most perfect of her sex, returns home after a long absence and discovers that. <character-link ref="B">B</character-link> has become an immoral character.</description></permutation>
+        <permutation number="1"><description><character-link ref="A">A</character-link>, who has long cherished <character-link ref="B">B</character-link> in his heart as the loveliest and most perfect of her sex, returns home after a long absence and discovers that <character-link ref="B">B</character-link> has become an immoral character.</description></permutation>
       </permutations>
       <lead-ups>
         <group mode="choose">
@@ -22324,7 +22324,7 @@
     <conflict id="546b" category="Married Life" subcategory="Marriage">
       <permutations>
         <permutation number="1"><description><character-link ref="B">B</character-link>, homely, marries a blind man, <character-link ref="A">A</character-link>, who thinks her surpassingly beautiful.</description></permutation>
-        <permutation number="2"><description><character-link ref="B">B</character-link> hires a noted eye-specialist to perform an operation on the eyes of her blind husband, <character-link ref="A">A</character-link>. whereby <character-link ref="A">A</character-link>’s sight is restored.</description></permutation>
+        <permutation number="2"><description><character-link ref="B">B</character-link> hires a noted eye-specialist to perform an operation on the eyes of her blind husband, <character-link ref="A">A</character-link>, whereby <character-link ref="A">A</character-link>’s sight is restored.</description></permutation>
       </permutations>
       <lead-ups>
         <group mode="choose">

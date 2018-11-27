@@ -4,6 +4,9 @@ import copy
 with open('plotto.xml', encoding='utf-8') as xml_file:
     soup = BeautifulSoup(xml_file, 'lxml')
     
+class EndOfStory(Exception):
+    pass
+    
 def conflictnum2ids(conflict_num):
     import re
     conflict_ids = re.compile("^"+str(conflict_num)+"[a-h]|"+str(conflict_num)+"$")
@@ -151,6 +154,10 @@ class Storyline:
             conflict.characters = characters
             
     def add_character(self, symbols, names):
+        """
+                Adds a char-s;ymbol masking.
+                Both arguments can be either a string or a list of strings
+                """
         if not isinstance(symbols, list):
             symbols = [symbols]
             names = [names]
@@ -160,6 +167,7 @@ class Storyline:
         self.characters = self.characters
         
     def print_summary(self):
+        """Prints the three clauses A, B and C"""
         #exec("print(storyline.{}_clause+', '+storyline.{}_clause.lower()+', '+storyline.{}_clause.lower())".format("A", "B", "C"))
         #exec("print(self.{}_clause+', '+self.{}_clause.lower()+', '+self.{}_clause.lower())".format("A", "B", "C"))
         lwr = ".lower()"
@@ -167,6 +175,11 @@ class Storyline:
         
         
     def print_story(self, index=False):
+        """Prints a summary as well all of the conflict segments of the storyline.
+                The optional boolian argument "index" indicates whether to print an index
+                for the conflict segments ––– this can be helpful to correctly recognize conflict
+                segment number when editing the storyline.
+                """ 
         self.story_plain_text = [i.plain_text for i in self.story]
         print(self.name+"\n")
         self.print_summary()
@@ -179,9 +192,12 @@ class Storyline:
             print("\n\n"+"\n".join(self.story_plain_text))
         
     def rename(self, name):
+        """Renames the name of the story (printed when the story is printed)"""
         self.name = name
         
     def get_clause(self, clause_letter, clause_id = None):
+        """Fetches a random clause if clause_id is not provided, otherwise fetches the corresponding
+                clause."""
         clause_type = {"A":"subject", "B":"predicate", "C":"outcome"}[clause_letter]
         if not clause_id:
             clause_id = get_random_id(self.soup, clause_type)
@@ -191,12 +207,19 @@ class Storyline:
         
         
     def remove_segment(self, segment_idx, until_segment_idx= None):
+        """Deletes conflict segment number `segment_idx` from the storyline when an id is provided, and 
+                an interval of segments when two ids are provided. One can see the segment ids by 
+                printing the story using the print_story function with the argument index=True"""
         if until_segment_idx:
             del self.story[segment_idx:until_segment_idx+1]
         else: 
             del self.story[segment_idx]
     
     def move_segment(self, segment_idx, new_idx):
+        """
+                Moves conflict segment number s`segment_idx` from its position to a new position `new_idx`.
+                One cae see the segment ids by printing the story using the print_story function with the argument index=True
+                """
         if not segment_idx == new_idx:
             segment = self.story[segment_idx]
             self.remove_segment(segment_idx)
@@ -206,19 +229,23 @@ class Storyline:
                 self.story.insert(new_idx-1, segment)
         
     def switch_segment_places(self, segment_idx1, segment_idx2):
+        """
+                Switches segments number `segment_idx1` and number `segment_idx2` in their position within the storyline.
+                One cae see the segment ids by printing the story using the print_story function with the argument index=True
+                """
         self.story[segment_idx1], self.story[segment_idx2] = self.story[segment_idx2], self.story[segment_idx1]
         
     def add_conflict_to_story(self, from_segment = None, direction = "+", conflict_id = None):
         """
-        Adds one conflict to the story, If direction = + then it adds a 
-        carry-on conflict (propagating forward in time) and if it's = -
-        then it adds a lead-up conflict. The "from_segment" is the index
-        of the reference conflict within the story list (not its id) after/before
-        which the new conflict is added.
-        conflict_id is an optional argument that dictates the conflict to add 
-        instead of getting randomly one of the lead-ups/carry-ons defined by
-        the reference conflict
-        """
+                Adds one conflict to the story, If direction = + then it adds a 
+                carry-on conflict (propagating forward in time) and if it's = -
+                then it adds a lead-up conflict. The "from_segment" is the index
+                of the reference conflict within the story list (not its id) after/before
+                which the new conflict is added.
+                conflict_id is an optional argument that dictates the conflict to add 
+                instead of getting randomly one of the lead-ups/carry-ons defined by
+                the reference conflict
+                """
         
         if not from_segment:
             from_segment = len(self.story)-1
@@ -303,7 +330,14 @@ class Storyline:
                 pass
           
     def modify_transforms(self, keys, values, first_segment, last_segment = None):
-        
+        """
+                Changes the char-symbol from those passed in "keys" to those passed in "values" from segment number "first_segment"
+                either until segment number "last_segment" or until the end if the latter was not provided.
+                NOTE! not passing a last_segment would result in modification in all segments from first_segment on. If you want
+                to modify the transform in a single conflict segment, pass its segment number twice.
+                Keys and values can be either a string or lists (of equal length) of strings.                
+                One cae see the segment ids by printing the story using the print_story function with the argument index=True
+                """
         if not last_segment:
             last_segment = float('inf')
         
@@ -356,6 +390,7 @@ class Conflict:
         self._apply_character_maskings()
         
     def _get_fresh_permutations(self):
+        """Fetches the original conflict segment, prior to application of char-symbol transformations"""
         self.permutations = []
         for i in self.permutation_numbers:
             self.permutations.append(copy.copy(self.content.find("permutation", number=i)))
@@ -370,6 +405,7 @@ class Conflict:
         self.plain_text = " ".join([permuation.description.text for permuation in self.permutations])
       
     def add_character(self, symbols, names):
+        """Adds character masking to the story ("A -> Hamlet")"""
         if not isinstance(symbols, list):
             symbols = [symbols]
             names = [names]
@@ -404,10 +440,10 @@ class Conflict:
     
     def transform2dict(self, conflict_link):
         """
-        Parses the transformations indicated in the xml file and
-        turns them into a dictionary mapping character symbols to
-        other character symbols.
-        """
+                Parses the transformations indicated in the xml file and
+                turns them into a dictionary mapping character symbols to
+                other character symbols.
+                """
         transform_dict = {}
         # get characters appearing in the linked conflict
         next_charset = set(char["ref"] for char in soup.find('conflict', id=conflict_link["ref"]).find_all("character-link"))
@@ -441,8 +477,10 @@ class Conflict:
                     self.transpositions[char["ref"]] = char["ref"]
     
     def update_transforms(self, old_transforms, new_transforms):
-        """update_transforms
         """
+                Integrates the character transforms/transpositions of a new carryon/leadup conflict
+                segment with the transforms of the source conflict segment.
+                """
         updated_transforms = {}
         for new_key, new_value in new_transforms.items():
             #if not new_key in old_transforms.valus():
@@ -472,20 +510,6 @@ class Conflict:
             if old_key not in updated_transforms:
                 updated_transforms[old_key] = old_transforms[old_key]
 
-
-
-
-
-            """
-            if new_key in old_transforms.values():
-                if True: #transitive
-                    updated_transforms[{v: k for k, v in my_map.items()}[new_key]] = new_value
-                else: # additive
-                    updated_transforms[new_key] = new_value
-
-
-                    inv_map = {v: k for k, v in my_map.items()}"""
-
         #updated_transforms = dict(old_transforms, **{key:old_transforms[new_transforms[key]] for key in new_transforms.keys()})
         return updated_transforms
 
@@ -493,7 +517,6 @@ class Conflict:
     
     def modify_transforms(self, keys, values):
         self._get_fresh_permutations()
-        #from IPython.core.debugger import Tracer; Tracer()() 
         if not isinstance(keys, list):
             keys = [keys]
             values = [values]
@@ -501,9 +524,9 @@ class Conflict:
         for dx, key in enumerate(keys):
             self.transpositions[key] = values[dx]
             if key not in self.characters:
-                self.add_character(values[dx], values[dx]) # maks the new symbols with themselves
+                self.add_character(values[dx], values[dx]) # masks the new symbols with themselves
         # Pregare the output string
-        ## Apply character symbol permutation ("A -> A-3")
+        # Apply character symbol permutation ("A -> A-3")
         self._apply_transpositions()
         self._apply_character_maskings()
         
@@ -511,10 +534,12 @@ class Conflict:
     
     def generate_next(self, direction ="+", choose= None):
         """
-        Fetches a random carry-on (dircetion = +) or a
-        random lead-up (dircetion = -). The optional choose
-        argument forces which carry-on/lead-up to get.
-        """
+                Fetches a random carry-on (dircetion = +) or a
+                random lead-up (dircetion = -). The optional choose
+                argument forces which carry-on/lead-up to get.
+                This is a generator that yield conflicts one by one, as some carryon/leadups
+                consist of more than one conflict. 
+                """
         import random
         if direction == "+":
             links = self.links_f
