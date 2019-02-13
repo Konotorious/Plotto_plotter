@@ -119,12 +119,6 @@ def get_conflict_belonging2B(soup, B_clause, conflict2B=None):
             if conflict_id_counter == random_num:
                 return str(cid)
             else: conflict_id_counter += 1
-            
-class Plotter:
-    """A container for storylines, and the user interface."""
-    
-    def __init__(self):
-        pass
 
 
 class Storyline:
@@ -155,9 +149,9 @@ class Storyline:
             
     def add_character(self, symbols, names):
         """
-                Adds a char-s;ymbol masking.
-                Both arguments can be either a string or a list of strings
-                """
+        Adds a char-symbol masking.
+        Both arguments can be either a string or a list of strings
+        """
         if not isinstance(symbols, list):
             symbols = [symbols]
             names = [names]
@@ -211,7 +205,11 @@ class Storyline:
                 an interval of segments when two ids are provided. One can see the segment ids by 
                 printing the story using the print_story function with the argument index=True"""
         if until_segment_idx:
-            del self.story[segment_idx:until_segment_idx+1]
+            if until_segment_idx == -1:
+                self.remove_segment(segment_idx, -2)
+                self.remove_segment(-1)
+            else:
+                del self.story[segment_idx:until_segment_idx+1]
         else: 
             del self.story[segment_idx]
     
@@ -548,7 +546,7 @@ class Conflict:
             
         for dx, key in enumerate(keys):
             self.transpositions[key] = values[dx]
-            if key not in self.characters:
+            if self.transpositions[key] not in self.characters:
                 self.add_character(values[dx], values[dx]) # masks the new symbols with themselves
         # Pregare the output string
         # Apply character symbol permutation ("A -> A-3")
