@@ -167,7 +167,6 @@ class Storyline:
         lwr = ".lower()"
         exec("print("+str(3*("self.{}_clause{}+',', ")).format("A","","B",lwr,"C",lwr)+"'\b\b')")
         
-        
     def print_story(self, index=False):
         """Prints a summary as well all of the conflict segments of the storyline.
                 The optional boolian argument "index" indicates whether to print an index
@@ -198,8 +197,7 @@ class Storyline:
         clause_text = self.soup.find(clause_type, number=clause_id).description.text
         exec("self."+clause_letter+"_clause = clause_text")
         exec("self."+clause_letter+"_clause_id = clause_id")
-        
-        
+               
     def remove_segment(self, segment_idx, until_segment_idx= None):
         """Deletes conflict segment number `segment_idx` from the storyline when an id is provided, and 
                 an interval of segments when two ids are provided. One can see the segment ids by 
@@ -246,24 +244,39 @@ class Storyline:
                 """
         
         if not from_segment:
-            from_segment = len(self.story)-1
+            if direction == "+":
+                from_segment = len(self.story)-1
+            elif direction == "-":
+                from_segment = 0
+            else:
+                raise ValueError("Undefined direction argument")
+        if from_segment <0:
+            from_segment += len(self.story)
         
         if direction == "+":
             try:
-                conflicts = self.story[from_segment].generate_next()
+                conflicts = self.story[from_segment].generate_next(direction ="+")
                 from_segment += 1
             except EndOfStory:
-                print("The end of the story is reached; no carry-ons")
-            
-            
+                print("No available carry-ons")
+
         elif direction == "-":
-            pass
+            try:
+                conflicts = self.story[from_segment].generate_next(direction ="-")
+            except EndOfStory:
+                print("No available lead-ups")
+                
         else:
             raise ValueError("Undefined direction argument")
             
             
         for idx, conflict in enumerate(conflicts):
             self.story.insert(from_segment+idx, conflict)
+        if direction == "+":
+            last_segment = from_segment+idx
+        else:
+            last_segment = from_segment
+        return last_segment
             
 
         
@@ -309,18 +322,31 @@ class Storyline:
             
             
             self.story.append(Conflict(self.soup, Bconflictid,[],self.transpositions, self.characters, self))
+            
+            if isinstance(steps,int):
+                if steps > 0:
+                    self.expand_story(steps = steps-1)
+                elif steps == 0:
+                    pass
+                else:
+                    self.expand_story(steps = steps+1)
         else:
             if steps == "+":
-                self.add_conflict_to_story()
-                    
+                last_segment = self.add_conflict_to_story(from_segment = from_segment, direction = "+")
+                return last_segment 
             elif steps == "-":
-                pass
+                last_segment = self.add_conflict_to_story(from_segment = from_segment, direction = "-")
+                return last_segment 
             elif steps > 0:
+                for i in range(steps):
+                    from_segment = self.expand_story(steps = "+", from_segment = from_segment)
+            elif steps == 0:
                 pass
             elif steps < 0:
-                pass
+                for i in range(-steps):
+                    from_segment = self.expand_story(steps = "-", from_segment = from_segment)
             else:
-                pass
+                raise ValueError("Undefined steps argument")
           
     def modify_transforms(self, keys, values, first_segment, last_segment = None):
         """
@@ -535,9 +561,7 @@ class Conflict:
 
         #updated_transforms = dict(old_transforms, **{key:old_transforms[new_transforms[key]] for key in new_transforms.keys()})
         return updated_transforms
-
-
-    
+  
     def modify_transforms(self, keys, values):
         self._get_fresh_permutations()
         if not isinstance(keys, list):
