@@ -231,7 +231,7 @@ class Storyline:
                 """
         self.story[segment_idx1], self.story[segment_idx2] = self.story[segment_idx2], self.story[segment_idx1]
         
-    def add_conflict_to_story(self, from_segment = None, direction = "+", conflict_id = None):
+    def add_conflict_to_story(self, from_segment = None, direction = "+", conflict_ids = None):
         """
                 Adds one conflict to the story, If direction = + then it adds a 
                 carry-on conflict (propagating forward in time) and if it's = -
@@ -253,22 +253,36 @@ class Storyline:
         if from_segment <0:
             from_segment += len(self.story)
         
-        if direction == "+":
-            try:
-                conflicts = self.story[from_segment].generate_next(direction ="+")
-                from_segment += 1
-            except EndOfStory:
-                print("No available carry-ons")
+        if not conflict_ids:
+            if direction == "+":
+                try:
+                    conflicts = self.story[from_segment].generate_next(direction ="+")
+                    from_segment += 1
+                except EndOfStory:
+                    print("No available carry-ons")
 
-        elif direction == "-":
-            try:
-                conflicts = self.story[from_segment].generate_next(direction ="-")
-            except EndOfStory:
-                print("No available lead-ups")
+            elif direction == "-":
+                try:
+                    conflicts = self.story[from_segment].generate_next(direction ="-")
+                except EndOfStory:
+                    print("No available lead-ups")
                 
-        else:
-            raise ValueError("Undefined direction argument")
-            
+            else:
+                raise ValueError("Undefined direction argument")
+                
+        else: 
+            if direction == "+":
+                from_segment += 1
+            if isinstance(conflict_ids, str):
+                conflicts = [Conflict(self.soup, conflict_ids, [], {}, self.characters, self)]
+            elif isinstance(conflict_ids, list):
+                if isinstance(conflict_ids[0], int):
+                    raise ValueError("Undefined conflict_ids arguments; conlifct_ids must be passed as strings, not an integers")
+                conflicts = [Conflict(self.soup, cid, [], {}, self.characters, self) for cid in conflict_ids]
+            elif isinstance(conflict_ids, int):
+                raise ValueError("Undefined conflict_ids argument; conlifct_id must be passed as a string, not an integer")
+            else:
+                raise ValueError("Undefined conflict_ids argument; must be a string or a list of strings")
             
         for idx, conflict in enumerate(conflicts):
             self.story.insert(from_segment+idx, conflict)
@@ -331,20 +345,30 @@ class Storyline:
                 else:
                     self.expand_story(steps = steps+1)
         else:
-            if steps == "+":
-                last_segment = self.add_conflict_to_story(from_segment = from_segment, direction = "+")
+            if steps == "+" and not isinstance(conflict_ids, list):
+                last_segment = self.add_conflict_to_story(from_segment = from_segment, direction = "+", conflict_ids = conflict_ids)
                 return last_segment 
-            elif steps == "-":
-                last_segment = self.add_conflict_to_story(from_segment = from_segment, direction = "-")
+            elif steps == "-" and not isinstance(conflict_ids, list):
+                last_segment = self.add_conflict_to_story(from_segment = from_segment, direction = "-", conflict_ids = conflict_ids)
                 return last_segment 
-            elif steps > 0:
+            elif (steps == "+" and isinstance(conflict_ids, list)) or str(steps) > "0":
+                if conflict_ids:
+                    steps = len(conflict_ids)
                 for i in range(steps):
-                    from_segment = self.expand_story(steps = "+", from_segment = from_segment)
+                    if conflict_ids:
+                        from_segment = self.expand_story(steps = "+", from_segment = from_segment, conflict_ids = conflict_ids[i])
+                    else:
+                        from_segment = self.expand_story(steps = "+", from_segment = from_segment)
             elif steps == 0:
                 pass
-            elif steps < 0:
+            elif (steps == "-" and isinstance(conflict_ids, list)) or str(steps) < "0":
+                if conflict_ids:
+                    steps = -len(conflict_ids)
                 for i in range(-steps):
-                    from_segment = self.expand_story(steps = "-", from_segment = from_segment)
+                    if conflict_ids:
+                        from_segment = self.expand_story(steps = "-", from_segment = from_segment, conflict_ids = conflict_ids[i])
+                    else:
+                        from_segment = self.expand_story(steps = "-", from_segment = from_segment)
             else:
                 raise ValueError("Undefined steps argument")
           
