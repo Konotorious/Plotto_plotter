@@ -19,6 +19,21 @@
     <character designation="B-7" sex="female">female inferior, employee</character>
     <character designation="B-8" sex="female">female utility symbol</character>
     <character designation="B-9" sex="female">female superior, employer. one in authority</character>
+    <character designation="F" sex="male">father</character>
+    <character designation="M" sex="female">mother</character>
+    <character designation="BR" sex="male">brother</character>
+    <character designation="SR" sex="female">sister</character>
+    <character designation="SN" sex="male">son</character>
+    <character designation="U", sex="male">uncle</character>
+    <character designation="AU" sex="female">aunt</character>
+    <character designation="CN" sex="male">male cousin</character>
+    <character designation="NW" sex="male">nephew</character>
+    <character designation="NC" sex="female">niece</character>
+    <character designation="GF" sex="male">grandfather</character>
+    <character designation="GM" sex="female">grandmother</character>
+    <character designation="SF" sex="male">stepfather</character>
+    <character designation="SM" sex="female">stepmother</character>
+    <character designation="GCH" sex="any">grandchild</character>
     <character designation="F-A" sex="male">father of A</character>
     <character designation="M-A" sex="female">mother of A</character>
     <character designation="BR-A" sex="male">brother of A</character>
@@ -8527,8 +8542,8 @@
     </conflict>
     <conflict id="181b" category="Love and Courtship" subcategory="Love’s Misadventures">
       <permutations>
-        <permutation number="1"><description><character-link ref="A">A</character-link>’s son, SN, is determined to marry <character-link ref="B">B</character-link>, whom <character-link ref="A">A</character-link> thinks is unworthy.</description></permutation>
-        <permutation number="2"><description><character-link ref="A">A</character-link>, seeking to prevent his son, SN, from marrying <character-link ref="B">B</character-link>, makes love to <character-link ref="B">B</character-link> and plans to marry her himself.</description></permutation>
+        <permutation number="1"><description><character-link ref="A">A</character-link>’s son, <character-link ref="SN">SN</character-link>, is determined to marry <character-link ref="B">B</character-link>, whom <character-link ref="A">A</character-link> thinks is unworthy.</description></permutation>
+        <permutation number="2"><description><character-link ref="A">A</character-link>, seeking to prevent his son, <character-link ref="SN">SN</character-link>, from marrying <character-link ref="B">B</character-link>, makes love to <character-link ref="B">B</character-link> and plans to marry her himself.</description></permutation>
       </permutations>
       <lead-ups>
         <group mode="choose">
@@ -25078,7 +25093,7 @@
     </conflict>
     <conflict id="609" category="Enterprise" subcategory="Misfortune">
       <permutations>
-        <permutation number="1"><description><character-link ref="A">A</character-link>, temporarily in charge of two mischievous children, CH-1 and CH-2, finds himself in more dilemmas than he can successfully manage.</description></permutation>
+        <permutation number="1"><description><character-link ref="A">A</character-link>, temporarily in charge of two mischievous children, <character-link ref="CH-1">CH-1</character-link> and <character-link ref="CH">CH-2</character-link>, finds himself in more dilemmas than he can successfully manage.</description></permutation>
       </permutations>
       <lead-ups>
         <group mode="choose">
@@ -25513,7 +25528,7 @@
     </conflict>
     <conflict id="622" category="Enterprise" subcategory="Misfortune">
       <permutations>
-        <permutation number="1"><description><character-link ref="A">A</character-link> mistakenly supposes his son, SN, to have perished in a tragic accident.</description></permutation>
+        <permutation number="1"><description><character-link ref="A">A</character-link> mistakenly supposes his son, <character-link ref="SN">SN</character-link>, to have perished in a tragic accident.</description></permutation>
       </permutations>
       <lead-ups>
         <group mode="choose">
@@ -25678,7 +25693,7 @@
     </conflict>
     <conflict id="626" category="Enterprise" subcategory="Misfortune">
       <permutations>
-        <permutation number="1"><description><character-link ref="A">A</character-link>, in making a scientific experiment, has unintentionally caused his daughter, D, a grievous injury.</description></permutation>
+        <permutation number="1"><description><character-link ref="A">A</character-link>, in making a scientific experiment, has unintentionally caused his daughter, <character-link ref="D">D</character-link>, a grievous injury.</description></permutation>
       </permutations>
       <lead-ups>
         <group mode="include">
@@ -27205,7 +27220,7 @@
     </conflict>
     <conflict id="673" category="Enterprise" subcategory="Misfortune">
       <permutations>
-        <permutation number="1"><description><character-link ref="A">A</character-link> finds a motor stage wrecked and the U. S. mail it was carrying scattered from the broken pouches. The stage driver, <character-link ref="A-4">A-4</character-link>, has gone for help. <character-link ref="A">A</character-link> picks up a torn letter, reads it, and discovers that <character-link ref="B">B</character-link> is in misfortune.</description></permutation>
+        <permutation number="1"><description><character-link ref="A">A</character-link> finds a motor stage wrecked and the <character-link ref="U">U</character-link>. S. mail it was carrying scattered from the broken pouches. The stage driver, <character-link ref="A-4">A-4</character-link>, has gone for help. <character-link ref="A">A</character-link> picks up a torn letter, reads it, and discovers that <character-link ref="B">B</character-link> is in misfortune.</description></permutation>
         <permutation number="2"><description><character-link ref="A">A</character-link>, a fugitive from justice, seeks to rescue <character-link ref="B">B</character-link> from her misfortunes.</description></permutation>
       </permutations>
       <lead-ups>
@@ -27230,7 +27245,7 @@
     </conflict>
     <conflict id="674" category="Enterprise" subcategory="Misfortune">
       <permutations>
-        <permutation number="1"><description><character-link ref="A">A</character-link> loses his son, SN, in whom all his ambitions were centered.</description></permutation>
+        <permutation number="1"><description><character-link ref="A">A</character-link> loses his son, <character-link ref="SN">SN</character-link>, in whom all his ambitions were centered.</description></permutation>
         <permutation number="2"><description><character-link ref="A">A</character-link> struggles against an overwhelming sorrow that proves an obstacle to enterprise and holds his abilities in subjection.</description></permutation>
       </permutations>
       <lead-ups>
@@ -31629,8 +31644,8 @@
     </conflict>
     <conflict id="800" category="Enterprise" subcategory="Mistaken Judgment">
       <permutations>
-        <permutation number="1"><description><character-link ref="B">B</character-link> has a weird delusion regarding her son, SN.</description></permutation>
-        <permutation number="2"><description><character-link ref="B">B</character-link> considers her son, SN, brilliant and highly talented, whereas he is less than mediocre in mentality.</description></permutation>
+        <permutation number="1"><description><character-link ref="B">B</character-link> has a weird delusion regarding her son, <character-link ref="SN">SN</character-link>.</description></permutation>
+        <permutation number="2"><description><character-link ref="B">B</character-link> considers her son, <character-link ref="SN">SN</character-link>, brilliant and highly talented, whereas he is less than mediocre in mentality.</description></permutation>
       </permutations>
       <lead-ups>
         <group mode="choose">
@@ -32091,8 +32106,8 @@
     <conflict id="810" category="Enterprise" subcategory="Helpfulness">
       <permutations>
         <permutation number="1"><description><character-link ref="A">A</character-link> is old, believes he is slipping in his work, and considers himself a failure.</description></permutation>
-        <permutation number="2"><description><character-link ref="A">A</character-link>’s son, SN, wins for his college in a gruelling contest; and SN tells <character-link ref="A">A</character-link>, who is gloomy and despairing and considers himself a failure, that his success was inspired by the thought that his father had never been beaten.</description></permutation>
-        <permutation number="3"><description><character-link ref="A">A</character-link> is inspired to carry on successfully in his profession because of the faith his son, SN, has in him.</description></permutation>
+        <permutation number="2"><description><character-link ref="A">A</character-link>’s son, <character-link ref="SN">SN</character-link>, wins for his college in a gruelling contest; and <character-link ref="SN">SN</character-link> tells <character-link ref="A">A</character-link>, who is gloomy and despairing and considers himself a failure, that his success was inspired by the thought that his father had never been beaten.</description></permutation>
+        <permutation number="3"><description><character-link ref="A">A</character-link> is inspired to carry on successfully in his profession because of the faith his son, <character-link ref="SN">SN</character-link>, has in him.</description></permutation>
       </permutations>
       <lead-ups>
         <group mode="choose">
@@ -32193,7 +32208,7 @@
     </conflict>
     <conflict id="813" category="Enterprise" subcategory="Helpfulness">
       <permutations>
-        <permutation number="1"><description><character-link ref="A">A</character-link> seeks to protect his son, SN, from what he conceives to be disgrace and dishonor on his own part.</description></permutation>
+        <permutation number="1"><description><character-link ref="A">A</character-link> seeks to protect his son, <character-link ref="SN">SN</character-link>, from what he conceives to be disgrace and dishonor on his own part.</description></permutation>
       </permutations>
       <lead-ups>
         <group mode="choose">
@@ -32611,8 +32626,8 @@
     </conflict>
     <conflict id="821" category="Enterprise" subcategory="Helpfulness">
       <permutations>
-        <permutation number="1"><description><character-link ref="A">A</character-link>’s son, SN, is arrested for committing a crime.</description></permutation>
-        <permutation number="2"><description><character-link ref="A">A</character-link> seeks to save his son, SN, from misfortune and becomes involved in an unpleasant complication.</description></permutation>
+        <permutation number="1"><description><character-link ref="A">A</character-link>’s son, <character-link ref="SN">SN</character-link>, is arrested for committing a crime.</description></permutation>
+        <permutation number="2"><description><character-link ref="A">A</character-link> seeks to save his son, <character-link ref="SN">SN</character-link>, from misfortune and becomes involved in an unpleasant complication.</description></permutation>
       </permutations>
       <lead-ups>
         <group mode="choose">
@@ -32746,7 +32761,7 @@
     </conflict>
     <conflict id="825" category="Enterprise" subcategory="Helpfulness">
       <permutations>
-        <permutation number="1"><description><character-link ref="A">A</character-link>, aware that his end is approaching, seeks to protect his adopted daughter, D, by making a will.</description></permutation>
+        <permutation number="1"><description><character-link ref="A">A</character-link>, aware that his end is approaching, seeks to protect his adopted daughter, <character-link ref="D">D</character-link>, by making a will.</description></permutation>
       </permutations>
       <lead-ups>
         <group mode="choose">
@@ -34830,9 +34845,9 @@
     </conflict>
     <conflict id="881" category="Enterprise" subcategory="Deliverance">
       <permutations>
-        <permutation number="1"><description><character-link ref="A">A</character-link> has turned his back upon happiness because of an obligation he fancies himself under to his son, SN.</description></permutation>
+        <permutation number="1"><description><character-link ref="A">A</character-link> has turned his back upon happiness because of an obligation he fancies himself under to his son, <character-link ref="SN">SN</character-link>.</description></permutation>
         <permutation number="2">
-          <description><character-link ref="A">A</character-link>’s son, SN, discovers a fateful secret of <character-link ref="A">A</character-link>’s, and persuades him to correct an error and regain lost happiness.</description>
+          <description><character-link ref="A">A</character-link>’s son, <character-link ref="SN">SN</character-link>, discovers a fateful secret of <character-link ref="A">A</character-link>’s, and persuades him to correct an error and regain lost happiness.</description>
           <includes>
             <group mode="choose">
               <conflict-link ref="425" category="Married Life" subcategory="Marriage"/>
@@ -35389,8 +35404,8 @@
     </conflict>
     <conflict id="896" category="Enterprise" subcategory="Deliverance">
       <permutations>
-        <permutation number="1"><description><character-link ref="B">B</character-link> learns that her son, SN, is suspected of having committed a crime.</description></permutation>
-        <permutation number="2"><description><character-link ref="B">B</character-link> knows that her son, SN, is innocent of the crime of which he is accused, and she knows who is guilty, but this knowledge makes the task of protecting SN dangerous and difficult.</description></permutation>
+        <permutation number="1"><description><character-link ref="B">B</character-link> learns that her son, <character-link ref="SN">SN</character-link>, is suspected of having committed a crime.</description></permutation>
+        <permutation number="2"><description><character-link ref="B">B</character-link> knows that her son, <character-link ref="SN">SN</character-link>, is innocent of the crime of which he is accused, and she knows who is guilty, but this knowledge makes the task of protecting <character-link ref="SN">SN</character-link> dangerous and difficult.</description></permutation>
       </permutations>
       <lead-ups>
         <group mode="choose">
@@ -36555,8 +36570,8 @@
     </conflict>
     <conflict id="928b" category="Enterprise" subcategory="Idealism">
       <permutations>
-        <permutation number="1"><description><character-link ref="A">A</character-link> is proud of his son, SN.</description></permutation>
-        <permutation number="2"><description><character-link ref="A">A</character-link>’s son, SN, dies a shameful, inglorious death, bringing dishonor and sorrow to <character-link ref="A">A</character-link>.</description></permutation>
+        <permutation number="1"><description><character-link ref="A">A</character-link> is proud of his son, <character-link ref="SN">SN</character-link>.</description></permutation>
+        <permutation number="2"><description><character-link ref="A">A</character-link>’s son, <character-link ref="SN">SN</character-link>, dies a shameful, inglorious death, bringing dishonor and sorrow to <character-link ref="A">A</character-link>.</description></permutation>
       </permutations>
       <lead-ups>
         <group mode="choose">
@@ -36702,7 +36717,7 @@
     </conflict>
     <conflict id="934" category="Enterprise" subcategory="Idealism">
       <permutations>
-        <permutation number="1"><description><character-link ref="A">A</character-link>, father of SN, renounces happiness in order to uphold a lofty conception of duty and save SN from disgrace.</description></permutation>
+        <permutation number="1"><description><character-link ref="A">A</character-link>, father of <character-link ref="SN">SN</character-link>, renounces happiness in order to uphold a lofty conception of duty and save <character-link ref="SN">SN</character-link> from disgrace.</description></permutation>
       </permutations>
       <lead-ups>
         <group mode="choose">
@@ -38279,7 +38294,7 @@
     </conflict>
     <conflict id="982a" category="Enterprise" subcategory="Obligation">
       <permutations>
-        <permutation number="1"><description><character-link ref="A">A</character-link> agrees to take in hand and control an incorrigible youth, NW, who has proved too hard a problem for his uncle and guardian, <character-link ref="A">A</character-link>’s friend, <character-link ref="A-2">A-2</character-link>.</description></permutation>
+        <permutation number="1"><description><character-link ref="A">A</character-link> agrees to take in hand and control an incorrigible youth, <character-link ref="NW">NW</character-link>, who has proved too hard a problem for his uncle and guardian, <character-link ref="A">A</character-link>’s friend, <character-link ref="A-2">A-2</character-link>.</description></permutation>
       </permutations>
       <lead-ups>
         <group mode="choose">
@@ -38672,7 +38687,7 @@
     <conflict id="994" category="Enterprise" subcategory="Obligation">
       <permutations>
         <permutation number="1"><description><character-link ref="B">B</character-link>, a widow, finds her happiness in being independent.</description></permutation>
-        <permutation number="2"><description><character-link ref="B">B</character-link>, a widow, is compelled by family obligations to live with a married son, SN.</description></permutation>
+        <permutation number="2"><description><character-link ref="B">B</character-link>, a widow, is compelled by family obligations to live with a married son, <character-link ref="SN">SN</character-link>.</description></permutation>
       </permutations>
       <lead-ups>
         <group mode="choose">
@@ -38874,8 +38889,8 @@
     </conflict>
     <conflict id="999" category="Enterprise" subcategory="Obligation">
       <permutations>
-        <permutation number="1"><description><character-link ref="A">A</character-link>’s nephew and ward, NW, is wild and reckless and <character-link ref="A">A</character-link> is unable to manage him.</description></permutation>
-        <permutation number="2"><description><character-link ref="A">A</character-link> passes his unmanageable nephew and ward, NW, along to a friend in the West, <character-link ref="A-2">A-2</character-link>, who declares that he will either kill NW or tame him.</description></permutation>
+        <permutation number="1"><description><character-link ref="A">A</character-link>’s nephew and ward, <character-link ref="NW">NW</character-link>, is wild and reckless and <character-link ref="A">A</character-link> is unable to manage him.</description></permutation>
+        <permutation number="2"><description><character-link ref="A">A</character-link> passes his unmanageable nephew and ward, <character-link ref="NW">NW</character-link>, along to a friend in the West, <character-link ref="A-2">A-2</character-link>, who declares that he will either kill <character-link ref="NW">NW</character-link> or tame him.</description></permutation>
       </permutations>
       <lead-ups>
         <group mode="choose">
@@ -38952,8 +38967,8 @@
     </conflict>
     <conflict id="1001b" category="Enterprise" subcategory="Obligation">
       <permutations>
-        <permutation number="1"><description><character-link ref="A">A</character-link> is to inherit a fortune from his uncle, U, on condition that he shall never leave his native land.</description></permutation>
-        <permutation number="2"><description><character-link ref="B">B</character-link>, an enemy of U who has left a fortune to <character-link ref="A">A</character-link> on condition that he shall never travel abroad, wins a promise from <character-link ref="A">A</character-link> that he will travel abroad after she dies.</description></permutation>
+        <permutation number="1"><description><character-link ref="A">A</character-link> is to inherit a fortune from his uncle, <character-link ref="U">U</character-link>,, on condition that he shall never leave his native land.</description></permutation>
+        <permutation number="2"><description><character-link ref="B">B</character-link>, an enemy of <character-link ref="U">U</character-link>, who has left a fortune to <character-link ref="A">A</character-link> on condition that he shall never travel abroad, wins a promise from <character-link ref="A">A</character-link> that he will travel abroad after she dies.</description></permutation>
       </permutations>
       <lead-ups>
         <group mode="choose">
@@ -39254,8 +39269,8 @@
     </conflict>
     <conflict id="1009b" category="Enterprise" subcategory="Obligation">
       <permutations>
-        <permutation number="1"><description><character-link ref="B">B</character-link>, a widow, has given all her money to her son, SN.</description></permutation>
-        <permutation number="2"><description><character-link ref="B">B</character-link>, penniless, is compelled to live with her son, SN.</description></permutation>
+        <permutation number="1"><description><character-link ref="B">B</character-link>, a widow, has given all her money to her son, <character-link ref="SN">SN</character-link>.</description></permutation>
+        <permutation number="2"><description><character-link ref="B">B</character-link>, penniless, is compelled to live with her son, <character-link ref="SN">SN</character-link>.</description></permutation>
       </permutations>
       <lead-ups>
         <group mode="choose">
@@ -39341,9 +39356,9 @@
     </conflict>
     <conflict id="1012" category="Enterprise" subcategory="Obligation">
       <permutations>
-        <permutation number="1"><description><character-link ref="A">A</character-link>’s impecunious grandchild, GCH, buys <character-link ref="A">A</character-link> a birthday present, <character-link ref="X">X</character-link>, on credit.</description></permutation>
+        <permutation number="1"><description><character-link ref="A">A</character-link>’s impecunious grandchild, <character-link ref="GCH">GCH</character-link>, buys <character-link ref="A">A</character-link> a birthday present, <character-link ref="X">X</character-link>, on credit.</description></permutation>
         <permutation number="2"><description><character-link ref="X">X</character-link>, a birthday present, will not he delivered until it is paid for.</description></permutation>
-        <permutation number="3"><description><character-link ref="A">A</character-link> pays for <character-link ref="X">X</character-link>, a birthday present, which his impecunious grandchild, GCH, is giving him.</description></permutation>
+        <permutation number="3"><description><character-link ref="A">A</character-link> pays for <character-link ref="X">X</character-link>, a birthday present, which his impecunious grandchild, <character-link ref="GCH">GCH</character-link>, is giving him.</description></permutation>
       </permutations>
       <lead-ups>
         <group mode="choose">
@@ -40727,7 +40742,7 @@
     <conflict id="1053" category="Enterprise" subcategory="Chance">
       <permutations>
         <permutation number="1"><description><character-link ref="A">A</character-link> hears by chance a familiar name, and the name solves a riddle of the past.</description></permutation>
-        <permutation number="2"><description><character-link ref="A">A</character-link>, hearing by chance a familiar name, finds his long-lost son, SN.</description></permutation>
+        <permutation number="2"><description><character-link ref="A">A</character-link>, hearing by chance a familiar name, finds his long-lost son, <character-link ref="SN">SN</character-link>.</description></permutation>
       </permutations>
       <lead-ups>
         <group mode="choose">
@@ -40818,7 +40833,7 @@
       <permutations>
         <permutation number="1"><description><character-link ref="A">A</character-link>, hiding in a place where there is no food, steals from the larder of his nearest neighbor, <character-link ref="A-4">A-4</character-link>.</description></permutation>
         <permutation number="2"><description><character-link ref="A-4">A-4</character-link>, missing food from his larder, half believes it was taken by a “ghost”.</description></permutation>
-        <permutation number="3"><description>A, a supposed ghost, is caught in a trap set by <character-link ref="A-4">A-4</character-link>; and <character-link ref="A-4">A-4</character-link> proves to be <character-link ref="A">A</character-link>’s missing son, SN.</description></permutation>
+        <permutation number="3"><description>A, a supposed ghost, is caught in a trap set by <character-link ref="A-4">A-4</character-link>; and <character-link ref="A-4">A-4</character-link> proves to be <character-link ref="A">A</character-link>’s missing son, <character-link ref="SN">SN</character-link>.</description></permutation>
       </permutations>
       <lead-ups>
         <group mode="include">
@@ -41117,8 +41132,8 @@
     </conflict>
     <conflict id="1065" category="Enterprise" subcategory="Personal Limitations">
       <permutations>
-        <permutation number="1"><description><character-link ref="A">A</character-link>, giving ten years of his life to a miserly uncle, U, in exchange for a college education, loses his ambition and enterprise.</description></permutation>
-        <permutation number="2"><description><character-link ref="A">A</character-link>’s uncle, U, has promised <character-link ref="A">A</character-link> all that he has when he dies, but U dies a bankrupt; and <character-link ref="A">A</character-link> is thrown upon the world with abilities obscured and enterprise strangled.</description></permutation>
+        <permutation number="1"><description><character-link ref="A">A</character-link>, giving ten years of his life to a miserly uncle, <character-link ref="U">U</character-link>,, in exchange for a college education, loses his ambition and enterprise.</description></permutation>
+        <permutation number="2"><description><character-link ref="A">A</character-link>’s uncle, <character-link ref="U">U</character-link>,, has promised <character-link ref="A">A</character-link> all that he has when he dies, but <character-link ref="U">U</character-link> dies a bankrupt; and <character-link ref="A">A</character-link> is thrown upon the world with abilities obscured and enterprise strangled.</description></permutation>
       </permutations>
       <lead-ups>
         <group mode="choose">
@@ -42441,7 +42456,7 @@
     </conflict>
     <conflict id="1108" category="Enterprise" subcategory="Personal Limitations">
       <permutations>
-        <permutation number="1"><description><character-link ref="A">A</character-link> is so preoccupied with business affairs that, while he intends writing to his son, SN, he somehow never gets around to it.</description></permutation>
+        <permutation number="1"><description><character-link ref="A">A</character-link> is so preoccupied with business affairs that, while he intends writing to his son, <character-link ref="SN">SN</character-link>, he somehow never gets around to it.</description></permutation>
       </permutations>
       <lead-ups>
         <group mode="choose">
@@ -43056,7 +43071,7 @@
     </conflict>
     <conflict id="1127" category="Enterprise" subcategory="Personal Limitations">
       <permutations>
-        <permutation number="1"><description><character-link ref="A">A</character-link> is a cousin of CN, and CN is to inherit the wealth of a deceased relative, <character-link ref="A-8">A-8</character-link>. If CN were out of the way, <character-link ref="A">A</character-link> would be the legal heir.</description></permutation>
+        <permutation number="1"><description><character-link ref="A">A</character-link> is a cousin of <character-link ref="CN">CN</character-link>, and <character-link ref="CN">CN</character-link> is to inherit the wealth of a deceased relative, <character-link ref="A-8">A-8</character-link>. If <character-link ref="CN">CN</character-link> were out of the way, <character-link ref="A">A</character-link> would be the legal heir.</description></permutation>
       </permutations>
       <lead-ups>
         <group mode="choose">
@@ -44197,7 +44212,7 @@
     </conflict>
     <conflict id="1158" category="Enterprise" subcategory="Simulation">
       <permutations>
-        <permutation number="1"><description><character-link ref="B">B</character-link>, traveling alone, invents a fictitious aunt, AUX, as a chaperone.</description></permutation>
+        <permutation number="1"><description><character-link ref="B">B</character-link>, traveling alone, invents a fictitious aunt, <character-link ref="AUX">AUX</character-link>, as a chaperone.</description></permutation>
       </permutations>
       <lead-ups>
         <group mode="choose">
@@ -45085,7 +45100,7 @@
       <permutations>
         <permutation number="1"><description><character-link ref="A">A</character-link>, in order to achieve happiness, seeks to be free of suspicion.</description></permutation>
         <permutation number="2"><description><character-link ref="A">A</character-link> drops his own name and assumes the name of a deceased friend, <character-link ref="A-2">A-2</character-link>.</description></permutation>
-        <permutation number="3"><description><character-link ref="A-2">A-2</character-link>, deceased, has a sister, SR; and SR, not knowing of <character-link ref="A-2">A-2</character-link>’s death, corresponds with <character-link ref="A">A</character-link>, thinking him her brother.</description></permutation>
+        <permutation number="3"><description><character-link ref="A-2">A-2</character-link>, deceased, has a sister, <character-link ref="SR">SR</character-link>; and <character-link ref="SR">SR</character-link>, not knowing of <character-link ref="A-2">A-2</character-link>’s death, corresponds with <character-link ref="A">A</character-link>, thinking him her brother.</description></permutation>
       </permutations>
       <lead-ups>
         <group mode="choose">
@@ -45437,8 +45452,8 @@
     </conflict>
     <conflict id="1196" category="Enterprise" subcategory="Simulation">
       <permutations>
-        <permutation number="1"><description><character-link ref="A">A</character-link> is mistaken by <character-link ref="B">B</character-link> for her son, SN.</description></permutation>
-        <permutation number="2"><description><character-link ref="A">A</character-link>, mistaken by a dying woman, <character-link ref="B">B</character-link>, for her son, SN, altruistically fosters the delusion in order to give <character-link ref="B">B</character-link> a few last moments of earthly comfort.</description></permutation>
+        <permutation number="1"><description><character-link ref="A">A</character-link> is mistaken by <character-link ref="B">B</character-link> for her son, <character-link ref="SN">SN</character-link>.</description></permutation>
+        <permutation number="2"><description><character-link ref="A">A</character-link>, mistaken by a dying woman, <character-link ref="B">B</character-link>, for her son, <character-link ref="SN">SN</character-link>, altruistically fosters the delusion in order to give <character-link ref="B">B</character-link> a few last moments of earthly comfort.</description></permutation>
       </permutations>
       <lead-ups>
         <group mode="choose">
@@ -45580,8 +45595,8 @@
     </conflict>
     <conflict id="1201" category="Enterprise" subcategory="Simulation">
       <permutations>
-        <permutation number="1"><description><character-link ref="A">A</character-link>’s cousin, CN, has long been mysteriously missing.</description></permutation>
-        <permutation number="2"><description><character-link ref="A">A</character-link>’s uncle, U, dies and leaves <character-link ref="A">A</character-link>’s cousin, CN, a large estate. <character-link ref="A">A</character-link> impersonates CN.</description></permutation>
+        <permutation number="1"><description><character-link ref="A">A</character-link>’s cousin, <character-link ref="CN">CN</character-link>, has long been mysteriously missing.</description></permutation>
+        <permutation number="2"><description><character-link ref="A">A</character-link>’s uncle, <character-link ref="U">U</character-link>, dies and leaves <character-link ref="A">A</character-link>’s cousin, <character-link ref="CN">CN</character-link>, a large estate. <character-link ref="A">A</character-link> impersonates <character-link ref="CN">CN</character-link>.</description></permutation>
       </permutations>
       <lead-ups>
         <group mode="choose">
@@ -47455,7 +47470,7 @@
     </conflict>
     <conflict id="1251" category="Enterprise" subcategory="Craftiness">
       <permutations>
-        <permutation number="1"><description><character-link ref="A">A</character-link> is aware that <character-link ref="A-8">A-8</character-link> knows too much for his (A’s) good.</description></permutation>
+        <permutation number="1"><description><character-link ref="A">A</character-link> is aware that <character-link ref="A-8">A-8</character-link> knows too much for his (<character-link ref="A">A</character-link>’s) good.</description></permutation>
         <permutation number="2"><description><character-link ref="A">A</character-link> gives <character-link ref="A-8">A-8</character-link> money with which to take himself out of the country.</description></permutation>
       </permutations>
       <lead-ups>
@@ -48153,8 +48168,8 @@
     </conflict>
     <conflict id="1270" category="Enterprise" subcategory="Craftiness">
       <permutations>
-        <permutation number="1"><description><character-link ref="A">A</character-link> disapproves of his nephew, NW; and <character-link ref="A">A</character-link>, sick unto death, sends for a lawyer, <character-link ref="A-8">A-8</character-link>, to draw his will.</description></permutation>
-        <permutation number="2"><description><character-link ref="A">A</character-link>’s nephew, NW, tricks <character-link ref="A">A</character-link> into thinking that he is <character-link ref="A-8">A-8</character-link>, the lawyer who has come to draw <character-link ref="A">A</character-link>’s will.</description></permutation>
+        <permutation number="1"><description><character-link ref="A">A</character-link> disapproves of his nephew, <character-link ref="NW">NW</character-link>; and <character-link ref="A">A</character-link>, sick unto death, sends for a lawyer, <character-link ref="A-8">A-8</character-link>, to draw his will.</description></permutation>
+        <permutation number="2"><description><character-link ref="A">A</character-link>’s nephew, <character-link ref="NW">NW</character-link>, tricks <character-link ref="A">A</character-link> into thinking that he is <character-link ref="A-8">A-8</character-link>, the lawyer who has come to draw <character-link ref="A">A</character-link>’s will.</description></permutation>
       </permutations>
       <lead-ups>
         <group mode="choose">
@@ -48934,7 +48949,7 @@
     </conflict>
     <conflict id="1289a" category="Enterprise" subcategory="Craftiness">
       <permutations>
-        <permutation number="1"><description><character-link ref="A">A</character-link> is a wealthy man whom sharpers, <character-link ref="A-5">A-5</character-link>, <character-link ref="A-5">A-5</character-link>, are seeking to influence to disinherit a son, SN.</description></permutation>
+        <permutation number="1"><description><character-link ref="A">A</character-link> is a wealthy man whom sharpers, <character-link ref="A-5">A-5</character-link>, <character-link ref="A-5">A-5</character-link>, are seeking to influence to disinherit a son, <character-link ref="SN">SN</character-link>.</description></permutation>
       </permutations>
       <lead-ups>
         <group mode="choose">
@@ -48992,8 +49007,8 @@
     </conflict>
     <conflict id="1289c" category="Enterprise" subcategory="Craftiness">
       <permutations>
-        <permutation number="1"><description><character-link ref="A">A</character-link>’s rich uncle, U, promises to leave his wealth to <character-link ref="A">A</character-link> when <character-link ref="A">A</character-link> and his wife, <character-link ref="B">B</character-link>, shall be blessed with a son and heir.</description></permutation>
-        <permutation number="2"><description><character-link ref="A">A</character-link>, seeking by strategy to secure a rich inheritance, fails in his plans when his uncle, U, discovers <character-link ref="A">A</character-link>’s “son and heir” to be a girl.</description></permutation>
+        <permutation number="1"><description><character-link ref="A">A</character-link>’s rich uncle, <character-link ref="U">U</character-link>, promises to leave his wealth to <character-link ref="A">A</character-link> when <character-link ref="A">A</character-link> and his wife, <character-link ref="B">B</character-link>, shall be blessed with a son and heir.</description></permutation>
+        <permutation number="2"><description><character-link ref="A">A</character-link>, seeking by strategy to secure a rich inheritance, fails in his plans when his uncle, <character-link ref="U">U</character-link>, discovers <character-link ref="A">A</character-link>’s “son and heir” to be a girl.</description></permutation>
       </permutations>
       <lead-ups>
         <group mode="choose">
@@ -54279,8 +54294,8 @@
     </conflict>
     <conflict id="1432" category="Enterprise" subcategory="Mystery">
       <permutations>
-        <permutation number="1"><description><character-link ref="A">A</character-link> dies and leaves his fortune to a nephew, NW.</description></permutation>
-        <permutation number="2"><description><character-link ref="A">A</character-link> dies and leaves his fortune to a nephew, NW, who has been mysteriously missing for years.</description></permutation>
+        <permutation number="1"><description><character-link ref="A">A</character-link> dies and leaves his fortune to a nephew, <character-link ref="NW">NW</character-link>.</description></permutation>
+        <permutation number="2"><description><character-link ref="A">A</character-link> dies and leaves his fortune to a nephew, <character-link ref="NW">NW</character-link>, who has been mysteriously missing for years.</description></permutation>
       </permutations>
       <lead-ups>
         <group mode="choose">
@@ -55105,7 +55120,7 @@
     </conflict>
     <conflict id="1450" category="Enterprise" subcategory="Revelation">
       <permutations>
-        <permutation number="1"><description><character-link ref="A">A</character-link> is compelled to alter certain plans very materially when he makes the astounding discovery that he is the father of <character-link ref="B">B</character-link>’s son, SN.</description></permutation>
+        <permutation number="1"><description><character-link ref="A">A</character-link> is compelled to alter certain plans very materially when he makes the astounding discovery that he is the father of <character-link ref="B">B</character-link>’s son, <character-link ref="SN">SN</character-link>.</description></permutation>
       </permutations>
       <lead-ups>
         <group mode="choose">
