@@ -631,9 +631,9 @@ class Conflict:
         if len(links.link) == 0:
             raise EndOfStory("No carry ons")
         
-        if not choose:
+        if choose == None:
             choose = random.randrange(len(links.link))
-        
+        print("chosen ", choose)
         conflicts = links.link[choose]
         
         for conflict in conflicts:
