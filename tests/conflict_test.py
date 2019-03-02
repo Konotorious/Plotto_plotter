@@ -16,18 +16,18 @@ def test_get_conflict_by_id(root_conflict_vanilla):
 
 @pytest.mark.dev    
 def test_choose_carry_on_conflict(root_conflict_vanilla):
-    for i in range(5):
+    for i in range(2):
         assert root_conflict_vanilla.generate_next("+", 1).__next__().plain_text == 'A is a fugitive from justice, who discovers that a relative, A-8, has died and left him a rich estate. A is a fugitive from justice who dares not show himself to receive a rich estate that has been left to him, for he knows he will be arrested.'
 
 @pytest.mark.dev
 def test_choose_carry_on_conflict__several_subconflicts_to_choose_from(root_conflict_vanilla):
-    for i in range(5):
+    for i in range(2):
         assert root_conflict_vanilla.generate_next("+", 2).__next__().plain_text == 'A, driven to bay by pursuers, takes refuge in an old house. A is rescued from pursuers, A-6, A-6, when the old house in which he has taken refuge is blown away by a tornado.'
 
 @pytest.mark.dev
 def test_choose_lead_up_conflict(root_conflict_vanilla):
-    for i in range(5):
-        assert root_conflict_vanilla.generate_next("-", 0).__next__().plain_text == 'A, in love with B, is required by F-B, father of B, to secure a certain amount of money before he will be seriously considered as a son-in-law'
+    for i in range(2):
+        assert root_conflict_vanilla.generate_next("-", 0).__next__().plain_text == 'A, in love with B, is required by F-B, father of B, to secure a certain amount of money before he will be seriously considered as a son-in-law.'
 
 @pytest.mark.basic
 def test_mask_untransposed_conflict(root_conflict_vanilla):
@@ -41,8 +41,8 @@ def test_fixture(root_conflict_vanilla):
 
 @pytest.mark.dev
 def test_lead_up_masking(root_conflict_vanilla):
-        assert root_conflict_vanilla.generate_next("-", 0).__next__().plain_text == 'A, in love with Joan, is required by F-B, father of Joan, to secure a certain amount of money before he will be seriously considered as a son-in-law'
-"""
+        assert root_conflict_vanilla.generate_next("-", 0).__next__().plain_text == 'A, in love with Joan, is required by F-B, father of Joan, to secure a certain amount of money before he will be seriously considered as a son-in-law.'
+
 @pytest.mark.basic
 @pytest.fixture(scope='module')    
 def root_conflict_transposed():
@@ -64,7 +64,7 @@ def test_mask_transposed_away_character_in_conflict(root_conflict_transposed):
 def test_mask_transposed_in_character_in_conflict(root_conflict_transposed):
     root_conflict_transposed.add_character("B-3","Jane")
     assert root_conflict_transposed.plain_text == 'A, in need of money to finance an enterprise, holds up a stage. A, robbing a stage, discovers that Jane, who knows and recognizes him, is one of the passengers.' 
-"""
+
 
 @pytest.mark.dev
 def test_plain_text_transposition():

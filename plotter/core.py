@@ -122,6 +122,8 @@ def get_conflict_belonging2B(soup, B_clause, conflict2B=None):
                 return str(cid)
             else: conflict_id_counter += 1
 
+def isCharSymbol(string): 
+    return string in [char["designation"] for char in soup.find_all("character")]
 
 class Storyline:
     """ A container for the storyline, a succession of plotto bits."""
@@ -398,19 +400,14 @@ class Conflict:
     def __init__(self, soup, conflict_id, permutation_numbers = None, transpositions = None, characters = None, storyline=None):
         bs_conflict = soup.find('conflict', id=conflict_id)
         self.soup = soup
+        self.storyline = storyline
         self.id = bs_conflict['id']
         self.category = bs_conflict['category']
         self.subcategory = bs_conflict['subcategory']
-        if transpositions:
-            #self.transpositions = transpositions
-            self.transpositions = transpositions
-        else:
-            self.transpositions = {}
         self.links_b = bs_conflict.find('lead-ups')
         self.links_b.link = []
         self.links_f = bs_conflict.find('carry-ons')
         self.links_f.link = []
-        self.storyline = storyline
         self.plain_text_editing = []
         
         # Getting the relevant permutations of the clause
@@ -419,6 +416,13 @@ class Conflict:
             permutation_numbers = [i+1 for i in list(range(int(self.content.find_all("permutation")[-1]["number"])))]
         self.permutation_numbers = permutation_numbers # the picked out permutations 
         self._get_fresh_permutations()
+        self.characters = {}
+        if transpositions:
+            #self.transpositions = transpositions
+            self.transpositions = self.update_transforms({}, {key :(value,"transitive") for key, value in transpositions.items()})
+        else:
+            self.transpositions = {}
+
             
         # getting the set of character symbols in the segment
         self.charSymbolSet = set(char["ref"] for char in self.content.find_all("character-link"))
@@ -426,10 +430,20 @@ class Conflict:
         # Pregare the output string
         ## Apply character symbol permutation ("A -> A-3")
         self._apply_transpositions()
+        
+        if transpositions:
+            for char in transpositions.values():
+                if self.storyline:    
+                    if ((char not in self.storyline.characters.keys()) and (char not in characters.keys())) or (self.stroyline.characters.get(char) == char):
+                        self.storyline.add_character(char, char)
+                else:
+                    if ((char not in self.characters.keys()) and (char not in characters.keys())) or (self.characters.get(char) == char):
+                        self.add_character(char, char)
+        
         if characters:
-            self.characters = characters
-        else:
-            self.characters = {}
+            for key, char in characters.items():
+                self.add_character(key, char)
+        
         self._get_links()
 
     @property
@@ -556,6 +570,11 @@ class Conflict:
                     char["ref"] = self.transpositions[char["ref"]]
                 except: # Add a self-reflective (null) transposition to the dictionary
                     self.transpositions[char["ref"]] = char["ref"]
+        # apply "plain text" transpositions:
+        self.plain_text = " ".join([permuation.description.text for permuation in self.permutations])
+        for key in self.transpositions.keys():
+            if not isCharSymbol(key):
+                self.edit_plain_text(key, self.transpositions[key])
     
     def update_transforms(self, old_transforms, new_transforms):
         """
@@ -574,6 +593,7 @@ class Conflict:
                     updated_transforms[new_key] = old_transforms[new_value[0]]
                 except KeyError:
                     updated_transforms[new_key] = new_value[0]
+
             elif new_value[1] == "additive":
                 # Perhaps needs to be adjusted, made more sophisticated
                 # so that a new character is introduced even if it wasn't in the current segment
@@ -633,7 +653,6 @@ class Conflict:
         
         if choose == None:
             choose = random.randrange(len(links.link))
-        print("chosen ", choose)
         conflicts = links.link[choose]
         
         for conflict in conflicts:

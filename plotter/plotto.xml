@@ -21206,7 +21206,8 @@
         </group>
         <group mode="choose">
           <conflict-link ref="503b" category="Married Life" subcategory="Marriage">
-            <transform from="lover A-3" to="child CH"/>
+            <transform from="A-3" to="CH"/>
+			<transform from="lover" to="child"/>
           </conflict-link>
         </group>
         <group mode="choose">
@@ -28206,7 +28207,8 @@
         <group mode="choose">
           <conflict-link ref="279" category="Love and Courtship" subcategory="Love’s Rejection">
             <transform from="A" to="B"/>
-            <transform from="husband of B-3" to="wife of A-8"/>
+            <transform from="B-3" to="A-8"/>
+			<transform from="husband of" to="wife of"/>
           </conflict-link>
         </group>
         <group mode="choose">
