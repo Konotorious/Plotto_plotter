@@ -434,7 +434,7 @@ class Conflict:
         if transpositions:
             for char in transpositions.values():
                 if self.storyline:    
-                    if ((char not in self.storyline.characters.keys()) and (char not in characters.keys())) or (self.stroyline.characters.get(char) == char):
+                    if ((char not in self.storyline.characters.keys()) and (char not in characters.keys())) or (self.storyline.characters.get(char) == char):
                         self.storyline.add_character(char, char)
                 else:
                     if ((char not in self.characters.keys()) and (char not in characters.keys())) or (self.characters.get(char) == char):

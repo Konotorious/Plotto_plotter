@@ -36385,7 +36385,7 @@
     <conflict id="923" category="Enterprise" subcategory="Idealism">
       <permutations>
         <permutation number="1"><description><character-link ref="A">A</character-link>, a crook, is trying to “go straight”.</description></permutation>
-        <permutation number="2"><description><character-link ref="A">A</character-link>, a crook trying to “go straight,” is compelled by <character-link ref="A-5">A-5</character-link>. the leader of his old gang, to take part in a criminal enterprise.</description></permutation>
+        <permutation number="2"><description><character-link ref="A">A</character-link>, a crook trying to “go straight,” is compelled by <character-link ref="A-5">A-5</character-link>, the leader of his old gang, to take part in a criminal enterprise.</description></permutation>
       </permutations>
       <lead-ups>
         <group mode="choose">
