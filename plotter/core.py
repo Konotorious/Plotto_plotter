@@ -412,7 +412,6 @@ class Conflict:
     """An object holding a single Ploto conflict situation."""
     
     def __init__(self, soup, conflict_id, permutation_numbers = None, transpositions = None, characters = None, storyline=None):
-        #bs_conflict = soup.find('conflict', id=conflict_id)
         bs_conflict  = soup.conflicts.find_all('conflict')[id2idx[conflict_id]]
         self.soup = soup
         self.storyline = storyline
@@ -556,7 +555,7 @@ class Conflict:
                 """
         transform_dict = {}
         # get characters appearing in the linked conflict
-        next_charset = set(char["ref"] for char in soup.find('conflict', id=conflict_link["ref"]).find_all("character-link"))
+        next_charset = set(char["ref"] for char in soup.conflicts.find_all('conflict')[id2idx[conflict_link["ref"]]].find_all("character-link"))
         for transform in conflict_link.find_all("transform"):
             if transform["to"] in self.charSymbolSet:
                 transform_dict[transform["from"]] = (transform["to"], "transitive")
