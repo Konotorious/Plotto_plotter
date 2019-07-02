@@ -9,6 +9,20 @@ with open(os.path.join(os.path.dirname(__file__), 'plotto.xml'), encoding='utf-8
 class EndOfStory(Exception):
     pass
     
+def gen_id2idx(soup):
+    """
+    Return a dictionary mapping conflict ids to conflict indices (location within the list of conflicts).
+    """
+    id2idx = {}
+    conflicts = soup.conflicts.find_all('conflict')
+    
+    for idx, conflict in enumerate(conflicts):
+        id2idx[conflicts[idx]["id"]] = idx
+        
+    return id2idx
+
+id2idx = gen_id2idx(soup)
+
 def conflictnum2ids(conflict_num):
     import re
     conflict_ids = re.compile("^"+str(conflict_num)+"[a-h]|"+str(conflict_num)+"$")
@@ -398,7 +412,8 @@ class Conflict:
     """An object holding a single Ploto conflict situation."""
     
     def __init__(self, soup, conflict_id, permutation_numbers = None, transpositions = None, characters = None, storyline=None):
-        bs_conflict = soup.find('conflict', id=conflict_id)
+        #bs_conflict = soup.find('conflict', id=conflict_id)
+        bs_conflict  = soup.conflicts.find_all('conflict')[id2idx[conflict_id]]
         self.soup = soup
         self.storyline = storyline
         self.id = bs_conflict['id']
